@@ -1,0 +1,114 @@
+/*    HTTP Host:  s-static.ak.facebook.com                                     */
+/*    Generated:  December 22nd 2009 10:13:01 AM PST                           */
+/*      Machine:  10.16.140.103                                                */
+/*       Source:  Local Cache                                                  */
+/*     Location:  rsrc:4:9novwt2j                                              */
+/*       Locale:  nu_ll                                                        */
+/*         Path:  css/27t68ukv7k00008k.pkg.css                                 */
+
+.confirmation_login_content{margin:15px auto;line-height:15px;width:420px}
+.tos_portion{color:#808080;font-size:9px;margin:10px auto;width:450px;padding:4px 0;border-top:solid 1px #ccc}
+.confirmation_login_content .optin{margin-bottom:0}
+.confirmation_stripes{height:15px;background:url(http://www.zaijiame.com/p/browse.php?u=2Q3dZczUd8PWWPgaoGFl%2Fj1UnMweNVv536MjrdwQlQ1MbrYcLFoL4voNzghGbExH3Hv8Gx17jGNM4Caa7Q%3D%3D&b=3) left top}
+.confirmation_login_content .title_header{padding:0 0 15px 0;line-height:18px}
+.window_close_message .status{margin:30px 20px}
+.api_confirmation .pop_content .dialog_body{padding:0}
+.api_confirmation .confirming_grant{padding-bottom:10px}
+.confirm_buttons{margin:15px auto 0}
+#api_close_text{padding:15px 0 0 0}
+.confirm_buttons .confirm_button{float:left}
+.confirm_cancel{float:left;padding:6px 5px 5px}
+.api_persistent{display:block;font-size:11px;font-weight:normal;line-height:16px;padding:15px 0 0 100px}
+#require_email_section{margin:10px 0 10px 0}
+#grant_email_type{margin-top:5px}
+.api_login div.confirmation_login_content h3{font-weight:normal}
+#login_form #grant_email_type{width:200px}
+#tabs{text-align:center;padding:4px 0;margin:10px 20px 0;border-bottom:solid 1px #3b5998;_margin-top:22px}
+#tabs div{display:inline;padding:0;margin:0;_margin:0 3px}
+#tabs a{margin:0;padding:4px}
+#tabs .activetab a{color:#fff;background:#3b5998}
+#tabs .activetab a:hover{text-decoration:none}
+#tabs .inactivetab a:hover{background:#d8dfea;text-decoration:none}
+#tabs .disabled{color:#c0c0c0;margin:0;padding:4px;text-decoration:none}
+.title_header{background:white;padding:20px 20px 17px}
+.title_header h2.title_h{margin:0;font-size:14px;padding:0 0 0 24px;background:url(http://www.zaijiame.com/p/browse.php?u=2Q3dZczUd8PWWPgaoGFl%2Fj1UnMweNVv536MjrdwQlQ1MbrYcLFoL4PcP1whGbExH3H7sHRN4xnlG4Caa7Q%3D%3D&b=3) no-repeat left 1px}
+.title_header h2.no_icon{background:none;padding:0}
+.title_header.add_border{border-bottom:solid 1px #ccc}
+.title_header.gray{background-color:#f7f7f7}
+.title_header.shorten{padding-bottom:0}
+.title_header.no_padding{padding:0}
+.title_header h4.title_h{color:#666;font-size:11px;font-weight:normal;padding:3px 0 0 24px}
+.title_header h4.no_icon{padding:3px 0 0 0}
+.album_header{margin:-20px 0 0 0}
+#newalbum{background:#f7f7f7;border-bottom:1px solid #d7d7d7;border-left:1px solid #d7d7d7;border-right:1px solid #d7d7d7;padding:20px}
+#newalbum #upload .formbuttons{padding:15px}
+.newalbum #newalbum .formbuttons{margin-left:300px}
+.editalbum #newalbum #dialog td.dialog{border:1px solid #ccc}
+.mobile_photos{text-align:center}
+.mobile_photos h3{font-size:13px;font-weight:normal;padding:0 0 20px 0}
+.mobile_photos .status,
+.mobile_photos #error{margin:0 0 15px}
+.mobile_photos .address{background:#fff;border:solid #ccc 2px;color:#444;font-size:22px;font-weight:bold;margin:15px auto 0;padding:8px;width:340px}
+.mobile_photos .address small{color:#666;display:block;font-size:11px;font-weight:normal}
+.mobile_photos .confirm{color:#666;font-size:11px;margin:0 auto;padding:10px 0 0 0;width:340px}
+.mobile_photos #mobile_upload .confirm .inputtext{margin-right:5px;width:100px}
+.mobile_photos .explanation{color:#444;padding-top:20px}
+.mobile_photos #mobile_help{color:#666;padding-top:10px}
+.mobile_photos #mobile_help div{padding:2px 0}
+.mobile_photos .disclaimer{border-top:1px solid #ccc;color:#666;margin:20px auto 0;padding:8px 10px 0;width:320px}
+.mobile_callout{padding:5px 10px 5px}
+.UIStarRating_Star{padding:0 0 0 2px}
+.UIStarRating_NoPadding .UIStarRating_Star{padding:0}
+.UIStarRating_Inline{display:inline}
+.UIStarRating_Inline .UIStarRating_Star{margin-bottom:-1px}
+.editalbum_header{margin:-20px 0 0 0}
+#editphotoalbum{padding:10px 0 5px;_padding:10px 0 10px;background:#f7f7f7;border-bottom:1px solid #d7d7d7;border-left:1px solid #d7d7d7;border-right:1px solid #d7d7d7}
+#editphotoalbum .emails_error{border:solid 1px #dd3c10;background:#ffebe8;padding:10px;margin:10px;width:580px}
+#editphotoalbum .emails_success{border:solid 1px #ffe222;background:#fffbe2;padding:10px;margin:10px;width:580px}
+#editphotoalbum .emails_success h3{font-size:11px}
+#editphotoalbum .photo{margin:0 10px 5px;padding:10px;background:white;border:solid 1px #d8dfea}
+#editphotoalbum .taggable{cursor:crosshair}
+#editphotoalbum .photo .thumb{float:right;width:180px}
+#editphotoalbum .photo .thumb .covercheck{background:#f7f7f7;border:solid 1px #ccc;padding:1px 1px 1px;text-align:left}
+#editphotoalbum .covercheck label{display:inline;margin:0 0 0 0;color:#000;font-weight:normal}
+#editphotoalbum .photo .thumb .noradio{padding:3px}
+#editphotoalbum .photo .info{float:left;width:400px}
+#editphotoalbum .photo .info textarea{width:290px}
+#editphotoalbum .photo .info .tags{line-height:15px}
+#editphotoalbum .photo .info .notags{display:none}
+#editphotoalbum .photo .info label{float:left;margin-bottom:2px}
+#editphotoalbum small{color:#808080}
+#editphotoalbum textarea{margin-top:0}
+.editphotos #invite_jump_content{padding:0 0 0;position:static}
+.editphotos #invite_jump_content .summary_bar{text-align:right;padding-bottom:4px}
+.editphotos .tab_bar{margin:0 0 0}
+.editphotos .tabs{margin-top:8px}
+#public_link_editphoto,
+#public_link_editalbum{clear:both;color:#000;font-size:9px;padding:5px 5px;text-align:center}
+#public_link_editphoto,
+#public_link_editalbum{margin:20px 0 0 0}
+#public_link_photo span,
+#public_link_editphoto span,
+#public_link_editalbum span{color:#000;display:block;font-size:11px}
+#standard_status h2{text-align:left}
+#standard_status{margin-bottom:15px}
+#friendsphotosonly{margin:0 0 0 0;padding:10px 10px 10px 10px;background:#f7f7f7;text-align:center}
+#friendsphotosonly .row{margin:0 0 5px 0;padding:0 0 10px 5px;background:white;border:solid 1px #ccc}
+#friendsphotosonly .col{padding-top:10px;text-align:left;width:280px}
+#friendsphotosonly .col0{float:left}
+#friendsphotosonly .col1{float:right;clear:right}
+#friendsphotosonly img{width:75px;float:left;margin-right:10px}
+#friendsphotosonly .author a:hover{color:#3b5998}
+#friendsphotosonly .date{color:#808080}
+.photoselect .buttons{text-align:center;padding:7px 10px}
+.profile .info_tab .info_section{padding-bottom:20px}
+.profile .info_tab .profile_info{padding-left:10px}
+.profile .info_tab .people .person{width:66px}
+.profile .basic_info_summary .stats span{color:#666;display:block;padding:10px 0 1px}
+.profile .basic_info_summary .facebook_disclaimer{color:#666;padding:10px 0 0}
+.profile .basic_info_summary .facebook_verified{display:block;padding:10px 0 0;line-height:13px}
+.profile .left_column .confirm_button{margin-bottom:15px;text-align:center}
+.profile .left_column .progress_image_span{display:inline-block;width:25px;height:20px}
+.profile .left_column .progress_image{background:transparent url(http://www.zaijiame.com/p/browse.php?u=2Q3dZczUd8PWWPgaoGFl%2Fj1UnMweNVv536MjrdwQlQ1MbrYcLFoL5ZwCyQhGbExH3Hi7CREjxWcQ4Caa7Q%3D%3D&b=3) no-repeat 5px 3px}
+
+#bootloader_css_27t68ukv7k00008k_pkg_css { height: 42px; }

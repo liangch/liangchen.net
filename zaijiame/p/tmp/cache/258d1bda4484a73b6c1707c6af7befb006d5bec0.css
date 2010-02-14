@@ -1,0 +1,682 @@
+body {
+	font-family: tahoma, arial, helvetica, sans-serif;
+	font-size: 8pt;
+	background-color: #587993;
+	color: #000000;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+table {
+	border-collapse: collapse;
+	border: none;
+	background-color:#BCCAD6; 
+	text-align: left;
+	/*padding: 2px;*/
+}
+
+table.main, table.mainouter {
+  background-color: #7C98AE;
+  padding: 2px;
+}
+
+table.readpost {
+	background-color:#b0bdc8;
+}
+
+/* Quotes inside a read post */
+table.readpost .main{
+	background-color:#b0bdc8;
+}
+
+table.header {
+border: solid;
+background-image: url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgamcAQP1j7grRjo5wOjhpOJOgTNRM%3D&b=3);
+background-color: #E2E2E2;
+}
+
+table.menu {
+  background-color: #7C98AE;
+}
+
+table.browse {
+background-color: #7C98AE;
+}
+
+table.poll {
+  background-color: #7C98AE;
+}
+
+table.interiortable {
+background-color: #7C98AE;
+}
+
+table.menubarbackground {
+background-image: url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgamcAQP1j7grRjrZYMkx1OMqQVPx4WpsA940MAalZJ&b=3);
+background-color: #FFFFFF;
+border-top: solid #8A8A8A 0px;
+}
+
+table.statusbar {
+  background-color: #7C98AE;
+border-style: ridge;
+border-width: 2px;
+}
+
+table.top {
+   background-color: #BCCAD6; 
+   padding: 2px;
+}
+
+table.bottom {
+  background: transparent;
+  padding: 2px;
+}
+
+table.message {
+   border: solid #000000 1px;
+}
+
+table.invisible {
+	background-color: #7C98AE;
+	border:2px;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+h1 {
+  font-size: 18pt;
+}
+
+h2 {
+border-style: solid solid none solid;
+padding-left: 5px;
+padding-bottom: 1px;
+border-width: 1px;
+background-image: url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgamcAQP1j7grRjqJYDghpdbqEdOg%3D%3D&b=3);
+font-size: 10pt;
+margin: 5px 0px 0px 0px;
+}
+
+h3 {
+  font-size: 10pt;
+}
+
+p {
+	font-size: 8pt;
+}
+
+p.sub { 
+  margin-bottom: 4pt;
+}
+
+p.sig {
+ border-top-style: dotted;
+ /*border-top-length: 4pt; */
+ margin-bottom: 2pt;
+}
+
+tr.featured {
+	background-color:#e6e6fa;
+}
+
+td {
+	font-size: 8pt;
+	border: solid #000000 1px;
+}
+
+th {
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color: #2F4879;
+	border: solid #000000 1px;
+}
+
+th a:link, th a:visited{
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+th a:hover {
+	font-weight: bold;
+	color: #FFFFFF;
+  text-decoration: underline;
+}
+
+td.right {
+border-style: solid none solid solid;
+border-width: 1px;
+}
+
+td.left {
+border-style: solid solid solid none;
+border-width: 1px;
+}
+
+td.sides {
+border-style: solid none solid none;
+border-width: 1px;
+}
+
+td.topbottom {
+border-style: none solid none solid;
+border-width: 1px;
+}
+
+td.border {
+	font-size: 8pt;
+	border: solid #000000 0px;
+
+}
+
+td.embedded {
+   border: none;
+   padding: 1px;
+   text-align: left;
+}
+
+
+td.bottom {
+  border: none;
+  padding: 1px;
+
+}
+
+td.text {
+  padding: 10pt;
+  text-align: left;
+}
+
+td.comment {
+  padding: 10pt;
+  font-size: 8pt;
+  text-align: left;
+}
+
+td.colhead {
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #2F4879;
+}
+
+td.rowhead, td.heading {
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+
+td.rowcenter {
+  font-weight: bold;
+  text-align: center;
+  vertical-align: top;
+}
+
+td.title {
+	font-size: 14pt;
+}
+
+td.navigation {
+	font-weight: bold;
+	font-size: 10pt;
+   border: none;
+}
+
+td.menunavigation {
+	font-weight: bold;
+	font-size: 10pt;
+	border-style: none solid none solid;
+	border-width: 1px;
+	background:gray url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgamcAQP1j7grRjrZYMkxBJJugTNRM%3D&b=3);
+	height:19px;
+    cursor: pointer;
+	/*padding-bottom: 2px;
+	padding-top: 2px;*/
+}
+
+td.menunavigation:Hover{
+	font-weight: bold;
+	font-size: 10pt;
+	border-style: none solid none solid;
+	border-width: 1px;
+background:gray url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgamcAQP1j7grRjrZYMkxBBbqEdOg%3D%3D&b=3);
+}
+
+td.menunavigation_new {
+	font-weight: bold;
+	font-size: 10pt;
+	border-style: none solid none solid;
+	border-width: 1px;
+    background:gray url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgamcAQP1j7grRjrZYMkxFKN%2BgTNRM%3D&b=3);
+    cursor: pointer;
+}
+
+td.menunavigation_new:Hover{
+	font-weight: bold;
+	font-size: 10pt;
+	border-style: none solid none solid;
+	border-width: 1px;
+background:gray url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgamcAQP1j7grRjrZYMkxBBbqEdOg%3D%3D&b=3);
+}
+
+td.clear {
+  padding: 0px;
+  border: 0px;
+  background: transparent;
+}
+
+form {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.sublink {
+	font-style: italic;
+	font-size: 7pt;
+	font-weight: normal;
+}
+
+font.gray
+{
+  color: #C0C0C0;
+  text-decoration: underline;
+}
+
+a:link, a:visited {
+  text-decoration: underline;
+  color: #000000;
+  /*font-weight: bold;*/
+}
+
+a:hover {
+  color: #420202;
+}
+
+a.index {
+	font-weight: bold;
+}
+
+a.biglink {
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+a.altlink:link, a.altlink:visited{
+	font-weight: bold;
+	color: #420202;
+	text-decoration: none;
+}
+
+a.altlink:hover {
+  text-decoration: underline;
+}
+
+a.altlink_blue:link, a.altlink_blue:visited{
+	font-weight: bold;
+	color: #023147;
+	text-decoration: none;
+}
+
+a.altlink_blue:hover {
+  text-decoration: underline;
+}
+
+a.altlink_green:link, a.altlink_green:visited{
+	font-weight: bold;
+	color: #007800;
+	text-decoration: none;
+}
+
+a.altlink_green:hover {
+  text-decoration: underline;
+}
+
+a.altlink_white:link, a.altlink_white:visited{
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.altlink_white:hover {
+	font-weight: bold;
+	color: #FFFFFF;
+  text-decoration: underline;
+}
+
+
+a.normal:link, a.normal:visited {
+        color: #000000;
+        text-decoration: none;
+}
+
+a.normal:hover {
+  text-decoration: none;
+}
+
+.important {
+	font-weight: bold;
+	font-size: 8pt;
+}
+
+.red {
+	color: #ee0000;
+}
+
+.yellow {
+	color: #997700;
+}
+
+.green {
+	color: #000000;
+}
+
+input, select, textarea, button {
+	font-family: tahoma, arial, helvetica, sans-serif;
+	font-size: 8pt;
+}
+
+.btn {
+  width: 75px;
+  height: 23px;
+}
+
+.small {
+  font-size: 7pt;
+}
+
+.big {
+  font-size: 10pt;
+}
+
+li {
+  margin-top: 6pt;
+  margin-bottom: 6pt;
+  margin-left:5px;
+}
+
+ul {
+  margin-left: 16pt;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+img.border  
+{  
+  border-style: solid;  
+  border-color: #000000; 
+  border-width: 0px; 
+}
+
+#logo {	
+	margin: 0;
+	width: 440px;
+	height: 97px;
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgajN0FNlHh3qQpppIXigsALKkTMyoJuc47o0BHaw%3D%3D&b=3) no-repeat top left;
+	clear: both;
+}
+
+#default_avatar {	
+	margin: 0;
+	width: 150px;
+	height: 75px;
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgajN0FNlHh3qQpppIXigsAJKMSPQAdoPAp%2B0ZabE0BlCDr&b=3) no-repeat top left;
+	clear: both;
+}
+
+img.unlockednew {
+ padding: 0px;
+ border: 0px;
+ background-image: url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgamcAQP1j7grRjppwQkxIANagYMxYascsm6FAAalZJ&b=3);
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+img.unlocked {
+ padding: 0px;
+ border: 0px;
+ background-image: url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgamcAQP1j7grRjppwQkxIANagYMxYasctm6k5I&b=3);
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+img.lockednew {
+ padding: 0px;
+ border: 0px;
+ background-image: url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgamcAQP1j7grRjppwQkxIALKkXNxAVuso%2Fo0BHaw%3D%3D&b=3);
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+img.locked {
+ padding: 0px;
+ border: 0px;
+ background-image: url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgamcAQP1j7grRjppwQkxIALKkXNxAV%2Bsgh6w%3D%3D&b=3);
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+img.poll {
+ padding: 0px;
+ border: 0px;
+ background-image: url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgamcAQP1j7grRjopIQyBhGJg%3D%3D&b=3);
+
+}
+
+img.pollright {
+ padding: 0px;
+ border: 0px;
+ background-image: url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgamcAQP1j7grRjopIQuQ1GJ64AchIYsg%3D%3D&b=3);
+
+}
+
+img.pollleft {
+ padding: 0px;
+ border: 0px;
+ background-image: url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgamcAQP1j7grRjopIQuRNKJrJaOxwX&b=3);
+
+}
+
+
+a.catlink:link, a.catlink:visited{
+	text-decoration: none;
+}
+
+a.catlink:hover {
+	color: #FFFFFF;
+}
+
+.donamt{
+/*border-bottom: none;*/
+font-weight: bold;
+}/*
+.donbttn{
+border-bottom: none;
+border-top: none;
+}
+.dongb{
+border-top: none;
+}*/
+.backgroundspace{
+background-color: #7F98AE;
+border:none;
+}
+
+.popup {
+	border: 1px solid #06F;
+	position:absolute;
+	background-color: white;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.previewbox {
+	display:none;
+	width:784px;
+	min-height:214px;
+	padding: 2px;
+}
+
+#rendererbutton{
+	padding: 5px 10px;
+	margin-top: 10px;
+}
+
+
+.minicon{
+	border:none;
+	margin-top:3px;
+	margin-bottom:-3px;
+}
+
+.genres{
+	color: #777;
+	padding-left: 10px;
+}
+
+.genres a{
+	text-decoration: none;
+	color: #777;
+}
+
+.genres a:hover{
+	text-decoration:underline;
+	color: #777;
+}
+
+/*details page*/
+/*.starbar {
+	background:transparent url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgajN0dKEe8lqkq&b=3) no-repeat scroll 0 0;
+	height:20px;
+	width:200px;
+	float:left;
+}
+
+.starbar .inner {
+	background:transparent url(http://www.zaijiame.com/p/browse.php?u=kBjdItubbcPEAv4L6S9%2BuTgajN0dKEe8lqkq&b=3) no-repeat scroll 0 -20px;
+	height:20px;
+}
+
+.rating {
+	float:left;
+	margin-left:10px;
+	font-weight:bold;
+	font-size: 16px;
+}*/
+.contentlayout {
+    width: 100%;
+}
+
+.contentlayout td{
+    border: 0;
+    vertical-align: top;
+}
+
+.contentlayout h1{
+    margin-left: 15px;
+    margin-top: 0px;
+}
+
+#plotcell{
+    padding: 0 10px 0 10px;
+    vertical-align: top;
+}
+
+#subcell{
+    padding-right: 1px;
+}
+
+#subcell div{
+    float:left;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+#subcell img{
+    display:block;
+    float: left;
+}
+
+#subcell span{
+    display:block;
+    float: left;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+#subcell span.one{width: 32px;}
+#subcell span.two{ width: 67px;}
+#subcell span.three{ width: 102px;}
+
+#imdbinfo{
+    margin-left: 15px;
+}
+
+#imdbinfo td{
+    white-space:nowrap;
+}
+
+#imdbinfo img, img.imdb{ border: 0px; margin-bottom: -2px; margin-left: 5px;}
+
+.content th{
+    font-weight: bold;
+    color: black;
+    background-color: transparent;
+    padding: 4px 10px 4px 0;
+    border: 0;
+    vertical-align: top;
+}
+
+.content td{
+    padding: 4px 20px 4px 1px;
+}
+
+#cast{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#cast img.actorpic{
+    display:block;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+#cast td{
+    text-align:center;
+    vertical-align:bottom;
+}
+/*collapsable stuff*/
+.collapsable{
+    cursor:pointer;
+    padding-bottom: 0px !important;
+}
+
+.label{
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.plusminus{
+    font-family:monospace;
+}
+
+.hideablecontent{
+    display: block;
+    margin-top: 5px;
+}
+
+#torrent-list{
+    min-width: 800px;
+}
+
+.titlelisting td{
+    border: 0px;
+}

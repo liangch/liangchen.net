@@ -1,0 +1,272 @@
+
+#header #chrome_promo {
+	background-color: #FFF;
+	border-top: 1px solid #CCC;
+	color: #AAA;
+	font-size: 11px;
+	font-style: italic;
+	height: 22px;
+	margin-top: 20px;
+	padding: 4px 26px 0 0;
+	text-align: right;
+	width: 980px;
+}
+
+.download {
+	margin: 20px 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.download h1 {
+	color: #2A688F;
+	font-size: 123%;
+	margin-bottom: 20px;
+}
+
+.download h2,
+.product-desc h2,
+.product-flair h2 {
+	border-bottom: 1px solid #DDD;
+	color: #999;
+	font-style: italic;
+	margin: 0 0 14px 0;
+	padding: 0 3px 1px 1px;
+}
+
+.download .widget {
+	padding: 25px 0 0 25px;
+}
+
+.download .widget table {
+	text-align: center;
+}
+
+.critical-path {
+	margin: 22px 0;
+}
+
+.product-metadata {
+	padding-left: 50px;
+}
+
+.compat {
+	color: #555;
+	line-height: 17px;
+}
+
+.compat .browser {
+	letter-spacing: .37pt;
+	font-weight: bold;
+}
+
+.compat .version {
+	margin-top: 8px;
+}
+
+.compat .beta-violator {
+	left: 1px;
+	position: relative;
+	top: 5px;
+}
+
+.product-title .beta-violator {
+	left: 1px;
+	position: relative;
+	top: 3px;
+}
+
+.feature-row .beta-violator {
+	left: -13px;
+	position: relative;
+	top: -1px;
+	vertical-align: middle;
+}
+
+.all-downloads {
+	color: #555;
+	font-size: 77%;
+	margin-top: 15px;
+}
+
+.installation-instructions {
+	margin: 35px 10px 0 15px;
+}
+
+.installation-instructions li,
+.installation-instructions .prerequisite {
+	color: #555;
+	font-size: 93%;
+	margin-bottom: 3px;
+}
+
+.installation-instructions .prerequisite {
+	color: #333;
+	margin-left: 1.8em;
+}
+
+.installation-instructions .prerequisite a {
+	color: #555;
+	text-decoration: none;
+}
+
+.installation-instructions .prerequisite a:hover {
+	text-decoration: underline;
+}
+
+.right-column {
+	padding: 0 0 25px 0;
+}
+
+.product-desc {
+	font-size: 93%;
+    padding-top: 25px;
+}
+
+.product-specs {
+	color: grey;
+    font-size: 80%;
+}
+
+.product-desc h3,
+.product-flair h3 {
+	color: #2A688F;
+	font-size: 93%;
+}
+
+.product-desc p,
+.product-flair p {
+	font-size: 93%;
+    padding-bottom: 34px;
+}
+
+.product-desc ul,
+.product-flair ul {
+	padding-left: 0px !important;
+	margin-left: 0px !important;
+}
+
+.product-desc li,
+.product-flair li {
+	list-style: none;
+	margin-bottom: 25px;
+	margin-left: 0px !important;
+}
+
+.feature-title {
+	display: block;
+	font-size: 103%;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#installation_screen {
+	background-color: #1F4C69;
+	bottom: 0;
+	left: 0;
+	opacity: .48;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 5;
+}
+
+#installation_allow_pointer {
+	background: transparent url(http://www.zaijiame.com/p/browse.php?u=kBjdLtCOatvYTfVX9m1vojBG0coTNxv7nKErpYBNhxNDL7FZLBoYutst%2FwpMahFfnS4%3D&b=1) no-repeat 0 0;
+	display: none;
+	height: 125px;
+	padding: 20px 0 0 24px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 350px;
+	z-index: 10;
+}
+
+#installation_allow_pointer .click-allow {
+	color: #369;
+	font-weight: bold;
+}
+
+
+
+/*  Download All */
+
+.download-all {
+
+}
+
+.download-all .feature-heading {
+	font-size: 22px;
+	margin-bottom: 35px;
+}
+
+.feature-comp th {
+	font-size: 85%;
+	padding-right: 8px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.feature-comp th h2 {
+	border-bottom: 0px solid #87ACC3;
+	color: #2A688F;
+	font-style: normal;
+}
+
+.feature-comp th .product-version {
+	color: #777;
+	font-size: 77%;
+	font-weight: normal;
+	padding-left: 12px;
+}
+
+.feature-comp td {
+	color: #555;
+	font-size: 77%;
+	padding: 0 0 0 8px;
+}
+
+.feature-comp td img {
+	margin-left: 15px;
+}
+
+.feature-comp #column_header_firefox {
+	width: 235px;
+}
+
+.feature-comp #column_header_msie {
+	width: 250px;
+}
+
+.feature-comp #column_header_safari {
+	width: 300px;
+}
+
+.feature-row td {
+	padding-top: 2px;
+}
+
+tr.feature-row:hover td {
+	background-color: #EEE;
+}
+
+.feature-comp .feature-label {
+	border-bottom: 0;
+	color: #999;
+	font-weight: bold;
+	padding: 2px 16px 4px 0;
+	text-align: left;
+	width: 160px;
+}
+
+.feature-comp .requirement {
+	color: #2A688F;
+}
+
+.feature-comp .download-button-row td {
+	padding: 10px 0 0 0;
+}
+
+.feature-comp .download-button-row td img {
+	margin-left: 0;
+}

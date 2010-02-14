@@ -1,0 +1,261 @@
+/* CSS Document */
+html{font-size:1.25em}
+body{ margin:0; padding:0; background:#fff; font-size:0.5em; font-family:Verdana, Arial, Helvetica, sans-serif, "宋体"; line-height:1.6em; text-align:center; color:#000000}
+
+a:link{color:#1F3A87}
+a:visited{color:#1F3A87}
+a:hover{ color:#f00}
+a img{border:none}
+
+.clearaf:after{ content:"."; clear:both;display: block;height: 0; overflow:hidden;visibility: hidden}
+.alignleft{ float:left}
+.alignright{ float:right}
+.tleft{ text-align:left}
+.tcenter{ text-align:center}
+.tright{ text-align:right}
+
+.f12{font-size:1.2em}
+
+blockquote {
+	margin: 3px 0 10px 10px;
+	padding-left: 10px;
+	font-size:1.0em;
+	line-height: 1.8em;
+	color: #555;
+	border-left: 5px solid #eee;
+	}
+blockquote  p{
+	padding:5px 0;
+	}
+
+.header{clear:both;width:96em; height:10em; margin:0 auto; text-align:left}
+
+.sitename{ width:28em; float:left; margin-top:2em; font-size:1em}
+.sitename a{ display:block; background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosoktBalABlCDr&b=3) no-repeat; width:273px; height:85px; text-indent:-999em;}
+.description{ display:none}
+.header .exp{ float:right; margin-top:7em}
+.header .exp a{ font-size:1.2em}
+
+.topnav{ margin-bottom:1em; margin-top:1em; width:100%; clear:both; background:#333;  } /* border-bottom:0.3em solid #990000 */
+.topnav ul{ width:96em; margin:0 auto; padding:0.5em 0 0.3em; line-height:2.6em; text-align:left}
+.topnav ul li{ display:inline; font-size:1.4em; padding:0 0.6em; font-weight:900}
+.topnav ul ul{width:auto;display:inline;margin:0; padding:0}
+.topnav ul li li{display:none;font-size:.9em; font-weight:400}
+.topnav ul li a,.topnav ul li a:visited{ color:#fff; text-decoration:none}
+.topnav ul li a:hover{ color:#c00}
+
+.pagetitle{font-size:2.4em;line-height:1.8em;margin:0;padding-top:.8em}
+
+.area{ width:96em; margin:0 auto; background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosokZcaF5NlGfqFgM%3D&b=3) repeat-y 69em;}
+.area .col1{ float:left; width:69em; overflow:hidden}
+.area .col2{ float:right;width:25.5em; overflow:hidden}
+
+.list_cap{ margin:1em 3em 0 0; height:1%;}
+.list_cap_bot{ margin-top:2em}
+.list_cap .page{ float:left}
+.list_cap .viewstyle{ float:right; padding-top:.2em}
+.list_cap .page,.list_cap .viewstyle{ font-size:1.2em}
+
+.list_cap .wp-pagenavi{ float:left; font-size:1.2em}
+.list_cap .pages,.list_cap .current,.list_cap .wp-pagenavi a{ float:left; margin-right:.3em; padding:.1em .3em 0; border:.1em solid #ccc; text-decoration:none}
+.list_cap .pages,.list_cap .current,.list_cap .wp-pagenavi span{ float:left; margin-right:.3em; padding:.1em .3em 0; border:.1em solid #ccc; text-decoration:none}
+.list_cap .current{ color:#c00}
+
+/*单篇文章页*/
+.post{ clear:both; width:66em; margin:3em 3em 0 0; padding-bottom:1.2em; border-bottom:0.1em solid #c8c8c8;text-align:left}
+.post_art{ margin-top:1.5em; border:0}
+.post .date{ display:inline; margin:0 1em 0 0; float:left; text-align:center; color:#c80100; font-family:"Times New Roman", Times, serif}
+.post .date strong{ font-size:1.6em}
+.post .date strong span{ font-size:1.3em; line-height:1em}
+.post .data{ float:left; padding-left:1em;border-left:0.1em solid #c8c8c8}
+.post .cap{ float:right;width:2em; display:inline; margin:1.5em 1.6em 0 1.6em}
+.post .setfont{ clear:both; text-align:right; font-size:1.2em}
+.post .setfont .color{color:#c80100; font-size:1.6em}
+.post .setfont .on{ font-weight:900}
+.post .setfont .bt{cursor:pointer}
+.post .setfont .bt1{ font-size:1.6em}
+.post .setfont .bt2{ font-size:1.4em}
+.post .setfont .btdiy{font-size:1.6em}
+.post h3.til{ margin:0; font-size:2.0em; line-height:1.3em}
+.post .data p{ margin:0; line-height:1.6em; font-size:1.2em}
+.post .cap .show{ display:block; float:right; background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosolNBfldAhGfqFgM%3D&b=3) no-repeat left top; width:9px; height:10px; overflow:hidden; text-indent:-999em; cursor:pointer}
+.post .cap .hide{ display:block; float:right; background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosolNBblNAgCyjGAxx&b=3) no-repeat left top; width:9px; height:10px; overflow:hidden; text-indent:-999em; cursor:pointer}
+
+.post .entry{ clear:both; width:100%;overflow:hidden; padding-top:1em; font-size:1.4em; line-height:1.9em}
+/* .post .entry img{ border:.1em solid #f3f3f3} */
+.post .entry a img{ border:.1em solid #ccc}
+.post .replace{clear:both; width:100%}
+.post .zhaiyao {border:1px solid #ccc; background-color:#f2f2f2; font-size:0.9em; color:#000; padding:.2em .5em .1em}
+
+.postlist{ clear:both; width:66em; margin:2em 2em 0 0; padding-bottom:1.2em;text-align:left}
+.postlist ul{ margin:0; padding:0; list-style:none}
+.postlist ul li{ width:100%; clear:both; line-height:2.8em;height:2.8em; border-bottom:.1em solid #c8c8c8}
+.postlist ul h3.til{ float:left; margin:0; font-size:1.4em;font-weight:400; line-height:2em; background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosoktHfksd3S7kGQ%3D%3D&b=3) no-repeat .2em .5em; padding-left:20px}
+.postlist ul .num{ float:right;font-size:1.2em;}
+.postlist ul h3.til a{ text-decoration:none}
+
+.post .metadata{ clear:both; padding-top:1em; font-size:1.2em}
+.post .metadata .view,
+.post .metadata .user{ float:right; text-align:right;}
+.post .metadata .meta{ float:left;}
+.post .metadata .meta .num{color:#c80100}
+.post_art .metadata{ margin-top:2em;}
+.post_art .metadata .user{ width:18em}
+
+.col2 .menu{ margin:0; padding:0; padding-bottom:2em; text-align:left; list-style:none}
+
+.col2 .menu .widgettitle{ margin:1em 0 0.5em; padding:0.2em 0; font-size:1.2em; line-height:1.6em; border-bottom:0.1em solid #c8c8c8;color:#373737}
+
+.col2 .menu .widget ul{ list-style:none; margin:0; padding:0 .3em;}
+.col2 .menu .widget p{margin:0;padding:.3em 0 0;font-size:1.2em; line-height:1.6em}
+.col2 .menu .widget li{ font-size:1.2em; line-height:1.6em; background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosoktHfksBlCDr&b=3) no-repeat 0.2em 0.7em; padding:.2em 0 .3em 1.5em}
+.col2 .menu .widget li li{font-size:1em}
+.col2 .menu .widget li a{ text-decoration:none}
+.col2 .menu .widget li img{display:block; font-size:0.9em; border:0.1em solid #000}
+
+.widget_search{width:100%; overflow:hidden}
+.widget_search form{ margin:0; padding:0}
+.widget_search div{font-size:1em; border:0.1em solid #c8c8c8; height:2.3em; overflow:hidden; color:#bbb; background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosolRLbE1MmyvqUQJ%2B2g%3D%3D&b=3) no-repeat left 0.1em; padding-left:2.6em}
+.widget_search input{ font-size:1.2em; border:0; background:#fff; display:none}
+.widget_search input#s{ display:block; margin:0.1em 0; padding-top:0.3em; height:2em; width:99%}
+
+.comment{margin:3em 3em 0 0; text-align:left; color:#666; }
+.comment h3{ font-size:1.2em; font-weight:400; margin:0; margin-top:1em; color:#c80100}
+.comment .commentlist{ margin-top:1em; border-bottom:.1em solid #ccc;}
+.comment .commentlist ul{ list-style:none; padding:0; margin:0}
+.comment .commentlist li{ padding-top:0.6em; border-top:0.1em solid #ccc; font-size:1.2em; line-height:1.6em}
+.comment .commentlist li p.txt{ margin:1em 0.8em}
+.comment .commentlist li cite{ background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosokRBYFJKnT2jGAxx&b=3) no-repeat 0.3em .2em; padding-left:1.6em; font-style:normal; color:#000; font-size:1.2em;}
+.comment .commentlist .commentmetadata a{ text-decoration:none}
+
+div .txt{clear:both;}
+
+#commentform .border{ border:1px solid #ccc; background:#fff}
+
+#gezi_comment_meta{line-height:180%;}
+#gezi_comment_meta .gezi_comment_meta_left{float:left;}
+#gezi_comment_meta .gezi_comment_meta_right{float:right;}
+
+.comment p{font-size:1.0em}
+.comment form label small{font-size:1em}
+.comment form textarea{ width:30em;}
+.comment form .bt{ background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosokRBYFJKnT3vC0tw1WY%3D&b=3) no-repeat; width:50px; height:27px; border:0}
+
+/*日历*/
+#calendar_wrap,#wp-calendar{ width:24em; overflow:hidden; text-align:center}
+#calendar_wrap{margin-bottom:0.5em}
+#wp-calendar{ border-collapse:collapse}
+#wp-calendar th,#wp-calendar td,#wp-calendar caption{ font-size:1.2em}
+#wp-calendar caption{ font-size:1.6em; line-height:2em; font-weight:900}
+#wp-calendar thead th{ font-weight:400; color:#bbb}
+#wp-calendar tbody td{ line-height:1.6em; width:14.8%; color:#6d6d6d; text-align:left; }
+#wp-calendar tbody a{ background:#f2f2f2; padding:0 0.2em; color:#000; text-decoration:none; width:16px; display:block; text-align:center;}
+#wp-calendar tbody a:hover{ background:#f00; padding:0 0.2em; color:#fff; text-decoration:none}
+
+
+/*ה??ҥ΄זtext-1*/
+#text-1 .widgettitle{ height:0.1em;line-height:1px; padding:0; overflow:hidden}
+#text-1 .textwidget{ padding:0 0.5em 0.8em; border-bottom:0.1em solid #c8c8c8}
+#text-1 .textwidget a,#text-1 .textwidget a{ text-decoration:none; color:#373737; font-size:1.2em; line-height:2em; font-weight:900; background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosolVdfhFImi8%3D&b=3) no-repeat right center; padding-right:32px; margin-right:0.5em}
+
+/*Ěȝҳ*/
+.navigation{ margin:1em 3em 0 0; width:65em}
+.navigation .alignleft,.navigation .alignright{ font-size:1.2em;}
+
+.footer{ margin-top:2em; padding:1.5em 0;background:#e6e6e6; border-top:0.2em solid #373737}
+.footer .area{ background:none;text-align:left}
+.footer .area .col1 span,.footer .area .col2 span{ font-size:1.2em}
+.footer .area a,.footer .area a:visited{ color:#646464}
+.footer .area a:hover{ color:#f00}
+
+/*è?죬?Îʹ?*/
+.list_cap .viewstyle a,
+.list_cap .viewstyle a:visited{ color:#c80100; text-decoration:none}
+
+.list_cap .viewstyle a:hover{ color:#000}
+
+/*è?죬?Îʹ?*/
+.cblue,a.cblue,a.cblue:visited,
+.header .exp .cblue,.header .exp a.cblue,.header .exp a.cblue:visited,
+.post h3.til a:link,.post h3.til a:visited,
+.post .metadata .num a,.post .metadata .num a:visited,
+.post .metadata .view a,.post .metadata .view a:visited{ color:#c80100;text-decoration:none}
+.post h3.til a:hover,
+.post .metadata .num a:hover,
+.post .metadata .view a:hover{ color:#000}
+
+/*è?ң??Îʹ?*/
+.header .exp a,
+.header .exp a:visited,
+.list_cap .page a,
+.list_cap .page a:visited,
+.post .setfont a,.post .setfont a:visited,
+.list_cap .wp-pagenavi a,.list_cap .wp-pagenavi a:visited,
+.post .metadata .cate a,.post .metadata .cate a:visited{ text-decoration:none; color:#646464}
+
+.header .exp a:hover,
+.list_cap .page a:hover,
+.post .setfont a:hover,
+.list_cap .wp-pagenavi a:hover,
+.post .metadata .cate a:hover{color:#f00}
+
+.header .exp a:hover,
+.list_cap .page a:hover,
+.post .setfont a:hover{ color:#f00}
+
+.post .metadata .user a,.post .metadata .user a:visited{ text-decoration:none; color:#646464}
+.post .metadata .user a:hover{color:#f00}
+
+.col2 .menu .widget li a,.col2 .menu .widget li a:visited{color:#56331d}
+.col2 .menu .widget li a:hover{color:#f00}
+
+/*页面自定义*/
+.header .exp{ position:relative; z-index:1}
+.header .setwebpar{ position:absolute; right:.3em; top:1.8em; z-index:99;}
+
+.header .exp #setwebbt{ display:none; font-size:1.2em}
+
+.setweb{width:28em}
+.setweb .arrow{ margin:0 6px -1px;background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosokZcf1BY3S7kGQ%3D%3D&b=3) no-repeat right top;height:18px; line-height:18px; position:relative; z-index:9999}
+.setweb .form{ margin:0; padding:1em; border:1px solid #c8c8c8; background:#f3f3f3;position:relative; z-index:9998}
+.setweb .form{ text-align:left; font-size:1.2em}
+.setweb .form td{ padding:.1em}
+.setweb .form .sp{ margin-top:1em}
+.setweb .form .style img{ margin-right:.6em; border:.1em solid #cccccc}
+
+/*输入提示*/
+#commentform .alert{ color:#c00}
+#commentform .alertborder{border:.1em solid #c00}
+
+.comment_action{text-align:right;}
+.comment_action .red{color:#BC2931;}
+.comment_action a{color:#1F3A87}
+.comment_action a:hover{background:none; text-decoration:underline; color:#BC2931;}
+.comment_content .quoted_comment{border:1px solid #999999; padding:3px; margin:5px 0px; background-color:#F9F9F9;}
+.quoted_author{color:#007EE9; font-weight:bold;}
+.quoted_time{color:#007EE9;}
+
+/*QuickReply*/
+.quick_reply{z-index:2009; position:absolute; width:400px; font-size:12px; border:1px solid #333333; center top; padding:2px; color:#333333; background:#FFFFFF;}
+#qr_header{height:30px; line-height:30px; background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosok5DbFhKgGb8DTpj1XQZq2%2BU4tw%3D&b=3) no-repeat left center; color:#FFFFFF; font-family:"Microsoft YaHei"; padding-left:4px; overflow:hidden;}
+#qr_header span{display:block;}
+.qr_title{float:left;}
+.qr_title label{}
+.qr_close{float:right; padding:5px 5px 0px 0px; cursor:pointer;}
+.qr_close img{border:none; vertical-align:middle;}
+#qr_body{padding:10px 4px;}
+.quoted_comment{}
+.quoted_comment fieldset{border:1px solid #DDDDDD; padding:5px; line-height:180%;}
+.quoted_comment fieldset p{margin:0px; padding:0px; text-align:left;}
+.quoted_comment legend{color:#999999;}
+.quoted_comment dl{}
+.quoted_comment dl dt{padding:3px 0px;}
+.quoted_comment dl dd{padding:3px; margin:0;}
+.quick_comment{padding:5px 2px; _padding:5px 0px;}
+#qr_content{width:385px; font-size:12px;line-height:180%;}
+.tip_field{line-height:180%; background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosok5DbFhKgGb5FhU62XIHoTPd7NNk&b=3) no-repeat 4px center; padding-left:20px; background-color:#fff3b3; margin:4px 0px; border:1px solid yellow; width:370px;}
+#qr_increase{display:block; float:right; height:12px; width:12px; background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosok5DbFhKgGb5Hkh%2B0mMHqyCA7pRlwIg%3D&b=3) no-repeat center center; padding:4px; margin-right:5px; cursor:pointer;}
+#qr_decrease{display:block; float:right; height:12px; width:12px; background:url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7NTf4b728gpSgaiNlROVv8haUitNwWjhpCJbVbbUNCocosok5DbFhKgGb5Hkhz2WMHqyCA7pRlwIg%3D&b=3) no-repeat center center; padding:4px; cursor:pointer;}
+#qr_footer{padding:5px 0px;}
+
+.rating{clear:both; padding:5px 0; font-family:'宋体'; font-size:12px;}

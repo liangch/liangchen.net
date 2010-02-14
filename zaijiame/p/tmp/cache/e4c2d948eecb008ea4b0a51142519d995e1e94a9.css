@@ -1,0 +1,154 @@
+@charset "gb2312";
+body, .main, .td {font-family: "宋体", SimSun, "细明体", MingLiU; font-size: 14.8px; line-height: 20px}
+.main1 {font-family: "宋体", SimSun, "细明体", MingLiU; font-size: 14.8px; line-height: 24px}
+.main2 {font-family: "宋体", SimSun, "细明体", MingLiU; font-size: 14.8px; line-height: 20px}
+.main3 {font-family: "宋体", SimSun, "细明体", MingLiU; font-size: 14.8px; line-height: 18px}
+.en7 { font-family:"Verdana", "Arial"; font-size:8pt;} 
+.menu {font-family: "宋体", SimSun, "细明体", MingLiU;  FONT-SIZE: 9pt}
+A:active {color: #000099; text-decoration: none;}
+A:visited {color: #003366; text-decoration: none;}
+A:link {color: #000099; text-decoration: none;} 
+A:hover {color: #FF0000; text-decoration: underline;}
+A.link:link {color: #0000FF; text-decoration: none;} 
+A.link:visited {color: #660099; text-decoration: none;}
+A.link:active {color: #000099; text-decoration: none;}
+A.link:hover {color: #FF0000; text-decoration: underline;}
+A.linkdot:link {color: #0000FF; text-decoration: none;} 
+A.linkdot:visited {color: #660099; text-decoration: none;}
+A.linkdot:active {color: #000099; text-decoration: none;}
+A.linkdot:hover {color: #FF0000; text-decoration: none;}
+A.link1:link {text-decoration: none; font-size: 14.8px; color:#003300; font-family: "宋体", SimSun, "细明体", MingLiU}
+A.link1:visited {text-decoration:none; font-size: 14.8px; color:#003300; font-family: "宋体", SimSun, "细明体", MingLiU}
+A.link1:active {text-decoration: none; font-size: 14.8px; color: #FF66FF; font-family: "宋体", SimSun, "细明体", MingLiU}
+A.link1:hover {text-decoration: underline; font-size: 14.8px; color: #FF0000}
+A.link2:link {text-decoration: underline; font-size: 14.8px;font-family: "宋体", SimSun, "细明体", MingLiU}
+A.link2:visited {text-decoration: underline; font-size: 14.8px;font-family: "宋体", SimSun, "细明体", MingLiU}
+A.link2:active {text-decoration: underline; font-size: 14.8px; font-family: "宋体", SimSun, "细明体", MingLiU}
+A.link2:hover {text-decoration: none;font-size: 14.8px}
+A.link3:link {text-decoration: underline;color:#003300; font-family: "宋体", SimSun, "细明体", MingLiU}
+A.link3:visited {text-decoration:underline;color:#003300; font-family: "宋体", SimSun, "细明体", MingLiU}
+A.link3:active {text-decoration: underline;color: #FF66FF; font-family: "宋体", SimSun, "细明体", MingLiU}
+A.link3:hover {text-decoration: underline; color: #FF0000}
+A.link4:link {text-decoration: none; color:#999999; font-size: 14.8px; line-height: 20px}
+A.link4:visited {text-decoration:none; color:#999999;font-size: 14.8px; line-height: 20px}
+A.link4:active {text-decoration: none; color: #FF66FF;font-size: 14.8px; line-height: 20px }
+A.link4:hover {text-decoration: underline; color: #FF0000;font-size: 14.8px; line-height: 20px}
+A.linkred:link {text-decoration: none; color:#ff0000; font-size: 14.8px; line-height: 20px}
+A.linkred:visited {text-decoration:none; color:#ff0000;font-size: 14.8px; line-height: 20px}
+A.linkred:active {text-decoration: none; color: #990000;font-size: 14.8px; line-height: 20px }
+A.linkred:hover {text-decoration: underline; color: #FF0000;font-size: 14.8px; line-height: 20px}
+A.menubar:link {text-decoration: none;color:#FFFFFF; font-family: "宋体", SimSun, "细明体", MingLiU}
+A.menubar:visited {text-decoration:none;color:#FFFFFF; font-family: "宋体", SimSun, "细明体", MingLiU}
+A.menubar:active {text-decoration: none;color: #FFFFFF; font-family: "宋体", SimSun, "细明体", MingLiU}
+A.menubar:hover {text-decoration: underline; color: #FF9203; font-family: "宋体", SimSun, "细明体", MingLiU}
+
+.navw {font-family: "宋体", SimSun, "细明体", MingLiU; font-size: 12.8px; line-height: 16.8px; color: #FFFFFF;}
+.cn {font-family: "宋体", SimSun, "细明体", MingLiU; font-size: 12.8px; line-height: 16.8px;}
+.cnMarquee {font-family: "宋体", SimSun, "细明体", MingLiU; font-size: 16.8px; line-height: 20px}
+.cnLarge {font-family: "宋体", SimSun, "细明体", MingLiU; font-size: 16.8px; line-height: 20px;}
+.cnMedium {font-family: "宋体", SimSun, "细明体", MingLiU; font-size: 15.8px; line-height: 18px;}
+.cnSmall {font-family: "宋体", SimSun, "细明体", MingLiU; font-size: 12px; line-height: 14px;}
+.cnTitle {font-family: "宋体", SimSun, "细明体", MingLiU; font-size: 20px; line-height: 30px; font-weight: bold;}
+.white{font-size: 9pt; line-height: 20px;color: #ffffff;text-decoration: none;}
+.a15 { COLOR: #006699; FONT-FAMILY: LETTER-SPACING: 0.05em; LINE-HEIGHT: 160%}
+
+.t1 {font-family: "宋体", SimSun, "细明体", MingLiU; font-size: 12.8px; line-height: 16.8px; color: #000000;}
+.enMarquee { font-family:"Verdana", "Arial"; font-size:12px; line-height: 18px} 
+.enTiny { font-family:"Verdana", "Arial"; font-size:9px; line-height: 14px} 
+.enSmall { font-family:"Verdana", "Arial"; font-size:10px; line-height: 14px} 
+.enMedium { font-family:"Verdana", "Arial"; font-size:11px; line-height: 16px} 
+.enLarge { font-family:"Verdana", "Arial"; font-size:14.8px; line-height: 20px} 
+.space {line-height: 1px; font-size: 1px;}
+.hidden { font-family:"Verdana", "Arial"; font-size:10px; line-height: 14px; color:#FFFFFF}
+.banner {border-color:#000000}
+
+/* message box */
+.messageBox {font-family: "宋体", SimSun, "细明体", MingLiU;}
+.messageStackError, .messageStackWarning {font-family: "宋体", SimSun, "细明体", MingLiU; font-weight:bold; color: #FF0000}
+.messageStackSuccess {font-family: "宋体", SimSun, "细明体", MingLiU; background-color: #99ff00; }
+
+.messageStack {
+  margin: 5px;
+  font-size: 10px;
+  color: #FF0000;
+  font-weight:bold;
+  background-color: #FFFCF5;
+  background-color: #FFFCF5;
+  border-width: 1px;
+  border-style: dotted;
+}
+
+/* dsp stylesheet */
+.comprice {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+font-weight: bold;
+color: #F47920;
+text-decoration: none;
+}
+.hotdesciptionlist {
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 11px;
+font-weight: normal;
+color: #666666;
+}
+.border {
+border-right: #cccccc 1px solid;
+border-left: #cccccc 1px solid;
+border-top: #cccccc 1px solid;
+padding-top: 5px; 
+}
+.border2 {
+border-left: #cccccc 1px solid;
+border-bottom: #cccccc 1px solid;
+padding-bottom: 5px; 
+border-top: #cccccc 1px solid;
+padding-top: 5px; 
+}
+table.rightborder { border-right: #cccccc 1px solid; }
+table.bottomborder { border-bottom: #cccccc 1px solid; }
+.top5header {width:100%;border:0px;padding:1px;height: 26px;background-color: #3300bb;}
+table.top5 {color:#333}
+table.top5 td.title{font-size:14px;font-weight:bold;padding:8px 0px;vertical-align:bottom}
+table.top5 td.data{font:12px arial,helvetica,sans-serif;white-space:nowrap;color:#555;}
+table.top5 td.num{color:#555;font-weight:bold;font-size:12px;}
+.header {background:#30b;padding:0px 10px 0px 5px;color:#fff;font-weight:bold;font-size:14px;vertical-align:middle;height:26px}
+.a14bk
+{
+    FONT-SIZE: 14px;
+    COLOR: #000000;
+    FONT-FAMILY: arial
+}
+.a16bk
+{
+    FONT-SIZE: 16px;
+    COLOR: #000000;
+    FONT-FAMILY: arial
+}
+.a14wh
+{
+    FONT-SIZE: 14px;
+    COLOR: #ffffff;
+    FONT-FAMILY: arial
+}
+
+/*****************************************************
+General Text
+*****************************************************/
+
+.text_a01 {color:#000000;}
+.text_a02 {color:#FFFFFF;}
+.text_a03 {color:#6B6D6B;}
+
+.text_b01 {color:#FF0000;}
+.text_b02 {color:#EF4F6B;}
+.text_b03 {color:#FF5215;}
+.text_b04 {color:#FFB61C;}
+.text_b05 {color:#003399;}
+.text_b06 {color:#2B6D86;}
+.text_b07 {color:#669900;}
+.text_b08 {color:#FF5595;}
+
+
+ul,li{padding:0; margin:0; list-style:disc;}
+li{width:345px;margin:0 0; height:20px; line-height:20px; font-size:14.8px; line-height:20px; white-space: nowrap; text-overflow:clip; overflow:hidden; display:block; }

@@ -1,0 +1,8 @@
+/* override nobr */
+body .nobr {
+    white-space: normal;
+}
+
+.follow-this-topic #follow_partner_email {
+	background-position: 0px -463px;
+}

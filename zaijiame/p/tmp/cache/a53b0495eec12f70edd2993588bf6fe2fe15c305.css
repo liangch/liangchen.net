@@ -1,0 +1,189 @@
+
+/*********************************************
+
+	DEPRECATED  -- DO NOT MODIFY
+
+	In the course of creating final
+	production code, we are moving all
+	required styles to ./discovery.css.
+	Make your changes there.
+
+	This file will be deleted soon.
+
+**********************************************/
+
+
+
+
+.button-small-left {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYalsQdPVHh3rMltJZNhApbNKkacQYctcMkoEtLa0sCkS6jGAxx&b=1) no-repeat 0 0;
+	cursor: pointer;
+	font-size: 1px;
+	height: 21px;
+	width: 8px;
+}
+
+.button-small-center {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYalsQdPVHh3rMltJZNhApbNKkacQYctcMkoERLY0tKgWTvGEtw1WY%3D&b=1) repeat-x 0 0;
+	cursor: pointer;
+	font-size: 9px;
+	height: 21px;
+	padding: 4px 10px 0 10px;
+	text-transform: uppercase;
+}
+
+.button-small-center a {
+	color: white;
+}
+
+.button-small-center a:hover {
+	text-decoration: none;
+}
+
+.button-small-right {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYalsQdPVHh3rMltJZNhApbNKkacQYctcMkoFVHaldb3ivqUQJ%2B2g%3D%3D&b=1) no-repeat 0 0;
+	cursor: pointer;
+	font-size: 1px;
+	height: 21px;
+	width: 8px;
+}
+
+
+
+
+/* Verify Email */
+
+#verify_email {
+    font-size: 93%;
+    padding: 0 22px;
+    width: 580px;
+}
+
+#verify_email h2 {
+    color: #777;
+    font-weight: normal;
+    margin: 26px 0 26px 0;
+}
+
+#verify_email p {
+    margin-top: 20px;
+}
+
+#verify_email a {
+    text-decoration: underline;
+}
+
+
+
+/* Ads Column */
+
+#adbox_column {
+	height: 250px;
+	width: 300px;
+}
+
+.not-top {
+	margin-top: 14px;
+}
+
+.not-left {
+	margin-left: 10px;
+}
+
+.adbox-300-250 {
+	background-image: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYalsQdPVHh3rMltJZNhxtNL75Zb0VBrJ19vQleY1g%3D&b=1);
+	height: 250px;
+	width: 300px;
+}
+
+.adbox-160-600 {
+	background-image: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYalsQdPVHh3rMltJZNhxtNL75ZbUNBrJl4vQleY1g%3D&b=1);
+	clear: left;
+	float: left;
+	height: 600px;
+	width: 160px;
+}
+
+.adbox-google-130-400 {
+	background-image: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYalsQdPVHh3rMltJZNhxtNL75ZOxoes8MtoBYdPUcbw3mjDwtw&b=1);
+	clear: right;
+	float: left;
+	height: 400px;
+	width: 130px;
+}
+
+
+
+/*------------------/
+  Drift - Original
+/------------------*/
+
+
+
+/* Rolled-up site */
+
+.no_results {
+	margin: 20px 0px 400px 20px;
+	margin-bottom: 250px;
+	font-size: medium;
+	font-style: italic;
+}
+
+.siteOwnerLink {
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+	text-align:right;
+	font-size:75%;
+}
+
+/* Sections */
+
+.footer-content {
+	margin: 8px;
+	float:right;
+	/* font-style: italic; */
+	background: white;
+	color: black;
+}
+
+
+
+/* Bookmarklet */
+
+#bookmarklet_promo {
+  padding: 20px;
+  margin-top: 20px;
+  border: thin solid #DDDDDD;
+}
+
+#admin_stuff {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#bookmarklet_link {
+  font-weight: bold;
+}
+
+
+
+/**** Edit History *****/
+
+.editItem {
+    border-bottom: 1px solid #cccccc;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+ }
+
+.editItem .date {
+    float: left;
+    width: 140px;
+}
+
+.editItem .content {
+    margin-left: 150px;
+}
+
+
+
+

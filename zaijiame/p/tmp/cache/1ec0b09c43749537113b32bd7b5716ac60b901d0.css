@@ -1,0 +1,958 @@
+/*
+	YUI Reset CSS
+	http://developer.yahoo.com/yui/reset/
+*/
+
+body,div,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,th,td {
+	margin: 0;
+	padding: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset,img {
+	border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style: normal;
+	font-weight: normal;
+}
+caption,th {
+	text-align: left;
+}
+h1 {
+   font-size: 140%;
+}
+h2 {
+   font-size: 108%;
+}
+h3 {
+   font-size: 110%;
+}
+h4,h5,h6 {
+   font-size: 100%;
+}
+q:before,q:after {
+	content: '';
+}
+abbr,acronym {
+	border: 0;
+}
+
+/*
+	http://developer.yahoo.com/yui/fonts/
+
+	(px)	(%)
+	-----------------
+	10 		77
+	11 		85
+	12 		93
+	13 		100
+	14 		108
+	15 		116
+	16 		123.1
+	17 		131
+	18 		138.5
+	19 		146.5
+	20 		153.9
+	21 		161.6
+	22 		167
+	23 		174
+	24 		182
+	25 		189
+	26 		197
+
+*/
+
+
+
+/*----------------------/
+  Xmarks Common Styles
+/----------------------*/
+
+
+
+/* Global */
+
+body, td {
+	font-size: 12px;
+}
+
+body {
+	border: 0;
+	font-family: arial, sans-serif;
+	margin-bottom: 20px;
+}
+
+div, td {
+	cursor: default;
+}
+
+td {
+	vertical-align: top;
+}
+
+a {
+	color: #034E89;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.plain {
+	text-decoration: none !important;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+input, textarea {
+	font-family: arial, sans-serif;
+	font-size: 100%;
+}
+
+.xmarks-body,
+.foxmarks-body {
+	background-color: white;
+	font-family: arial, sans-serif;
+
+}
+
+.xmarks-content,
+.foxmarks-content {
+	margin-top: 10px;
+}
+
+.xmarks-body .debug a {
+	color: #BF5E24 !important;
+}
+
+.ns {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+}
+
+
+
+/* Tags */
+
+a {
+	text-decoration: underline;
+}
+
+
+
+/* General */
+
+.thumbnail-large {
+	height: 150px;
+	width: 200px;
+}
+
+.edit-controls {
+	color: #666;
+	font-size: 11px;
+}
+
+.edit-controls a {
+	color: #666;
+	margin: 0 1px;
+}
+
+
+
+/* Forms */
+
+.xmarks-form {
+	width: 650px;
+}
+
+.xmarks-form .field {
+	margin: 10px 0 0 0;
+	overflow: auto;
+}
+
+.xmarks-form .field .label {
+	clear: left;
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	width: 150px;
+}
+
+.xmarks-form .field .value {
+	float: left;
+	width: 250px;
+}
+
+.xmarks-form .field .error {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBJL7QZL1oHtcMh6UZaZFBB3iz%2FDQplkWIS4Caa7Q%3D%3D&b=1) no-repeat left 0;
+	color: #B32317;
+	float: left;
+	font-size: 11px;
+	line-height: 16px;
+	margin: 1px 0 0 10px;
+	padding-left: 20px;
+	width: 220px;
+}
+
+.xmarks-form .buttons {
+	clear: left;
+	margin: 10px 0 0 150px;
+}
+
+.xmarks-form .field .legend {
+	font-size: 10px;
+	color: #666;
+}
+
+.xmarks-form .alert-cell {
+	width: 400px;
+}
+
+.xmarks-form .text-input {
+	border: 1px solid #7F9DB9;
+	font-size: 12px;
+	height: 20px;
+	padding: 1px;
+	width: 250px;
+}
+
+.xmarks-form textarea {
+	border: 1px solid #7F9DB9;
+	height: 100px;
+	overflow: auto;
+	padding: 1px;
+	width: 250px;
+}
+
+
+
+/* Lightbox */
+
+.xmarks-lightbox {
+	background-color: #888888;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	text-align: center;
+	top: 0
+	z-index: 1000;
+}
+
+.xmarks-lightbox-frame {
+	position: fixed;
+	top: 100px;
+	width: 100%;
+	z-index: 1100;
+}
+
+.xmarks-lightbox-dialog {
+	background-color: white;
+	border: 1px solid #CCC;
+	width: 450px;
+	z-index: 1500;
+}
+
+.xmarks-lightbox-dialog .xmarks-form {
+	text-align: left;
+	width: 430px;
+}
+
+.xmarks-lightbox-dialog .xmarks-form .error {
+	display: none;
+}
+
+.xmarks-lightbox-dialog .lbd-header {
+	border-bottom: 1px solid #CCC;
+	color: #666;
+	height: 30px;
+	overflow: hidden;
+}
+
+.xmarks-lightbox-dialog .lbd-title {
+	float: left;
+	font-size: 14px;
+	letter-spacing: 2px;
+	padding: 7px 0 5px 20px;
+	text-transform: uppercase;
+}
+
+.xmarks-lightbox-dialog .lbd-close {
+	cursor: pointer;
+	float: right;
+	font-size: 10px;
+	margin: 6px 11px 0 0;
+	padding: 2px 7px 3px 7px;
+	text-transform: lowercase;
+}
+
+.xmarks-lightbox-dialog .lbd-body {
+	padding: 15px 15px 20px 20px;
+}
+
+
+
+/* Buttons */
+
+.xmarks-button {
+	border: 0;
+	cursor: pointer;
+	font-size: 10px;
+	height: 25px;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 0 8px 0 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.xmarks-button::-moz-focus-inner { border: none; }
+
+.xmarks-button span {
+	border: 0 !important;
+	color: white;
+	display: block;
+	height: 25px;
+	line-height: 23px;
+	margin: 0;
+	padding: 0 0 0 10px;
+	position: relative;
+	white-space: nowrap;
+}
+
+.default-button {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNNbIAMxsC%2B80k%2BEIDf1ZImz2gHQI522kT&b=1) right no-repeat;
+}
+
+.default-button span {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNNbIAMxsC%2B80k%2BEIDYVpJh2TvGEtw1WY%3D&b=1) left no-repeat;
+}
+
+.generic-button {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNNbIAMxsC%2B8g67F4Df1ZImz2gHQI522kT&b=1) right no-repeat;
+}
+
+.generic-button span {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNNbIAMxsC%2B8g67F4DYVpJh2TvGEtw1WY%3D&b=1) left no-repeat;
+}
+
+.get-info-button {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNNbIAMxsC%2B80k%2BEIDYV5dlCygDQxw1HRYrCbd7NNk&b=1) right no-repeat;
+	height: 30px;
+	padding: 0 8px 0 0;
+}
+
+.get-info-button span {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNNbIAMxsC%2B8gt%2BQpHY1lA3iXoGRE63mdbqSiV&b=1) left no-repeat;
+	height: 30px;
+	line-height: 29px;
+	padding: 0 0 0 29px;
+}
+
+.install-now-button {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNNbIAMxsC%2B8g66EJAIFNOgS7oUhd%2B22gB4yOUpd1rzw%3D%3D&b=1) right no-repeat;
+	height: 40px;
+	padding: 0 20px 0 0;
+}
+
+.install-now-button span {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNNbIAMxsC%2B8Ym%2FlNPYVMCnSb6Ugly2nRYrCbd7NNk&b=1) left no-repeat;
+	font-size: 15px;
+	height: 40px;
+	line-height: 39px;
+	padding: 0 0 0 45px;
+}
+
+
+
+/* Generic Boxes */
+
+.xmarks-box-1000w {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghMYkdKgGa8T1Unyy0SvCCKpsl224GyA9ld2gTfNUDJB3g%3D&b=1) top no-repeat;
+	padding-top: 5px;
+}
+
+.xmarks-box-1000w-inner {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghMYkdKgGa8T1Unyy0SvCCKpsl224GyA9ld2gTfI0DJB3g%3D&b=1) bottom no-repeat;
+	overflow: auto;
+	padding: 0 10px 5px 0;
+}
+
+
+
+/* Gray / Alert / Error Boxes */
+
+.xmarks-gray-box {
+	color: #000000;
+}
+
+.xmarks-gray-box-inner {
+	background-color: white;
+	border-left: 1px solid #E0E0E0;
+	border-right: 1px solid #E0E0E0;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 7px 14px;
+}
+
+.xmarks-gray-box-right {
+	float: right;
+	font-size: 1px;
+	height: 100%;
+	line-height: 1px;
+	width: 6px;
+}
+
+.xmarks-gray-box-top {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghMYkdKgGbqGgtyzmkW4yaB6sMv3YGpS5hK0hTfIwmACXdz&b=1) top left no-repeat;
+	height: 5px;
+	overflow: auto;
+}
+
+.xmarks-gray-box-top-right {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghMYkdKgGbqGgtyzmkW4yaB6sMv3YGpS4ZG0wiGbAzJQHl8IQ%3D%3D&b=1) top right no-repeat;
+	float: right;
+	font-size: 1px;
+	height: 5px;
+	line-height: 1px;
+	width: 6px;
+}
+
+.xmarks-gray-box-bottom {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghMYkdKgGbqGgtyzmkW4yaB6sMvy4GtEptCmQyXJxqDDHk7IPe3&b=1) bottom left no-repeat;
+	height: 5px;
+	overflow: auto;
+}
+
+.xmarks-gray-box-bottom-right {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghMYkdKgGbqGgtyzmkW4yaB6sMvy4GtEptCmRKbJgbaQ3xyafm4QQ%3D%3D&b=1) bottom right no-repeat;
+	float: right;
+	font-size: 1px;
+	height: 5px;
+	line-height: 1px;
+	width: 6px;
+}
+
+/*****/
+
+.xmarks-alert-box {}
+
+.xmarks-alert-box-inner {
+	border-left: 1px solid #A8C047;
+	border-right: 1px solid #A8C047;
+	color: #8D9731;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 7px 14px;
+}
+
+.xmarks-alert-box-right {
+	float: right;
+	font-size: 1px;
+	height: 100%;
+	line-height: 1px;
+	width: 6px;
+}
+
+.xmarks-alert-box-top {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghPYVpdhzqiGBdy2W5Yui6DptZnz5r0BJMB0wmU&b=1) top left no-repeat;
+	height: 5px;
+	overflow: auto;
+}
+
+.xmarks-alert-box-top-right {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghPYVpdhzqiGBdy2W5Yui6DpshrzoatS5ZImgebJw%3D%3D&b=1) top right no-repeat;
+	float: right;
+	font-size: 1px;
+	height: 5px;
+	line-height: 1px;
+	width: 6px;
+}
+
+.xmarks-alert-box-bottom {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghPYVpdhzqiGBdy2W5YrC6H%2F9VvhIK8AIAC1gfcJgfI&b=1) bottom left no-repeat;
+	height: 5px;
+	overflow: auto;
+}
+
+.xmarks-alert-box-bottom-right {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghPYVpdhzqiGBdy2W5YrC6H%2F9VvhJywAZxbmQKVbwnHCA%3D%3D&b=1) bottom right no-repeat;
+	float: right;
+	font-size: 1px;
+	height: 5px;
+	line-height: 1px;
+	width: 6px;
+}
+
+.xmarks-error-box {}
+
+.xmarks-error-box-inner {
+	border-left: 1px solid #B22418;
+	border-right: 1px solid #B22418;
+	color: #B32317;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 7px 14px;
+}
+
+.xmarks-error-box-right {
+	float: right;
+	font-size: 1px;
+	height: 100%;
+	line-height: 1px;
+	width: 6px;
+}
+
+.xmarks-error-box-top {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghLf01AgTqiDQBzkXQavmyf7tx2hIy%2BSJNG0g%3D%3D&b=1) top left no-repeat;
+	height: 5px;
+	overflow: auto;
+}
+
+.xmarks-error-box-top-right {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghLf01AgTqiDQBzkXQavmyB4t1q3cO7AdpI3QY%3D&b=1) top right no-repeat;
+	float: right;
+	font-size: 1px;
+	height: 5px;
+	line-height: 1px;
+	width: 6px;
+}
+
+.xmarks-error-box-bottom {
+	background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghLf01AgTqiDQBzkWIaujWc5pduzIitS5ZImgebJw%3D%3D&b=1) bottom left no-repeat;
+	height: 5px;
+	overflow: auto;
+}
+
+.xmarks-error-box-bottom-right {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghLf01AgTqiDQBzkWIaujWc5pdwwImxEtlN006VKAg%3D&b=1) bottom right no-repeat;
+	float: right;
+	font-size: 1px;
+	height: 5px;
+	line-height: 1px;
+	width: 6px;
+}
+
+
+
+/* Tabs */
+
+.xmarks-tabs {
+	border-bottom: 1px solid #D0D0D0;
+	margin-top: 20px;
+}
+
+.xmarks-tabs .tab-layout {
+	left: 10px;
+	position: relative;
+	top: 1px;
+}
+
+.xmarks-tabs .tab-left,
+.xmarks-tabs .tab-right {
+	border-bottom: 0px;
+	font-size: 1px;
+	height: 25px;
+	width: 6px;
+}
+
+.xmarks-tabs .tab-center {
+	border-bottom: 0px;
+	font-size: 77%;
+	font-weight: bold;
+	height: 25px;
+	padding: 5px 12px 0 12px;
+}
+
+.xmarks-tabs .tab-center a {
+	white-space: nowrap;
+}
+
+.xmarks-tabs td .tab-link,
+.xmarks-tabs td .tab-link:hover {
+	text-decoration: none;
+}
+
+.xmarks-tabs td {
+	cursor: pointer;
+}
+
+.xmarks-tabs .tab-left {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYalsQdPVHh3rMltJZNkh5NbaoROgFcvcEp7lNHe1oCkS6jGAxx&b=1) no-repeat 0 0;
+}
+
+.xmarks-tabs .tab-center {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYalsQdPVHh3rMltJZNkh5NbaURMgEUpoIh40ZNeVZZlmTvGEtw1WY%3D&b=1) repeat-x 0 0;
+}
+
+.xmarks-tabs .tab-center a {
+	color: #666 !important;
+}
+
+.xmarks-tabs .tab-right {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYalsQdPVHh3rMltJZNkh5NbbQdOx0F%2BcYm7ERaZElK3ivqUQJ%2B2g%3D%3D&b=1) no-repeat 0 0;
+}
+
+.xmarks-tabs .active td {
+	cursor: default;
+}
+
+.xmarks-tabs .active .tab-left {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYalsQdPVHh3rMltJZNkh5NbaoROgFctcw85FFLIF1I3S7kGQ%3D%3D&b=1) no-repeat 0 0;
+}
+
+.xmarks-tabs .active .tab-center {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYalsQdPVHh3rMltJZNkh5NbaURMgEUpoIp7lNHe1oCkS6jGAxx&b=1) repeat-x 0 0;
+}
+
+.xmarks-tabs .active .tab-center a {
+	color: #333 !important;
+}
+
+.xmarks-tabs .active .tab-right {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYalsQdPVHh3rMltJZNkh5NbbQdOx0F%2Bc4r%2BU5YaBJNlGfqFgM%3D&b=1) no-repeat 0 0;
+}
+
+.xmarks-tabs .nf .tab-left {
+	width: 5px;
+}
+
+.xmarks-tabs .active .nf .tab-left,
+.xmarks-tabs .inactive .nf .tab-left {
+	background-position: -1px 0;
+}
+
+
+
+/* Header */
+
+#header {
+	margin-bottom: 10px;
+}
+
+#header #logo_cell {
+	width: 145px;
+}
+
+#header #formerly_foxmarks {
+	margin-right: 18px;
+}
+
+#header #shadow {
+	height: 107px;
+	margin-top: 6px;
+	text-align: right;
+	width: 854px;
+}
+
+#header #shadow img {
+	text-align: left;
+}
+
+#header #nav {
+	color: #999;
+	font-size: 11px;
+	letter-spacing: 1px;
+	margin: 0 12px 0 0;
+	text-transform: uppercase;
+}
+
+#header a:hover {
+	text-decoration: underline !important;
+}
+
+#header #nav a {
+	color: #0195CB;
+	text-decoration: none;
+}
+
+#header #nav span {
+	color: #9B9B9B;
+	padding: 0 8px;
+}
+
+#header #user_login {
+	color: #999;
+	font-size: 77%;
+	margin: 6px 12px 4px 0;
+}
+
+#header #user_login a {
+	color: #0195CB;
+	text-decoration: none;
+}
+
+#tagline {
+	padding: 0 0 5px 13px;
+}
+
+#tagline_text {
+	color: white;
+	display: none;
+	font-size: 1px;
+	line-height: 1px;
+}
+
+
+
+/* Footer */
+
+#footer {
+	border-top: 1px solid #CCCCCC;
+	clear: both;
+	color: #CCC;
+	font-size: 11px;
+	margin-top: 25px;
+	padding-top: 10px;
+	text-align: center;
+	width: 1000px;
+}
+
+#footer .footer-nav-block {
+	float: left;
+	margin-left: 13px;
+	text-align: left;
+}
+
+#footer #company_info {
+	width: 245px;
+}
+
+#footer #customer_support {
+	width: 245px;
+}
+
+#footer #web_discovery {
+	width: 250px;
+}
+
+#footer #browser_sync {
+	width: 160px;
+}
+
+#footer .footer-nav-header {
+	color: #555;
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 200%;
+	margin: 0;
+}
+
+#footer .footer-nav-block ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#footer .footer-nav-block li {
+	line-height: 200%;
+}
+
+#footer .footer-nav-block li a {
+	color: #888;
+	text-decoration: none;
+}
+
+#footer .footer-nav-block li a:hover {
+	text-decoration: underline;
+}
+
+#footer .footer-nav-block li span {
+	color: #AAA;
+}
+
+#footer .copyright {
+	clear: both;
+	color: #AAA;
+	padding-top: 40px;
+	text-align: center;
+}
+
+
+
+/* Search Box */
+
+#search_box {
+	margin-top: 2px;
+}
+
+#search_box #search_cell {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghMYkdKgGb%2BGgRl32hYrSSd%2F99whIy%2BSJNG0g%3D%3D&b=1) repeat-x 0 0;
+	height: 59px;
+	padding-top: 12px;
+}
+
+#search_box #search_bubble_left {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghMYkdKgGb%2BGgRl32hYoiSV%2F5dgzsC%2BD5I%3D&b=1) no-repeat 0 0;
+	width: 14px;
+}
+
+#search_box #search_bubble_right {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghMYkdKgGb%2BGgRl32hYvCiU484vy4n3AZ1J&b=1) no-repeat 100% 0;
+	width: 10px;
+}
+
+#search_box #search_input {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghHY09ahzqiDAB2zmMd4yaB6t5rzICtS5ZImgebJw%3D%3D&b=1) repeat-x 0 0;
+	border: 1px solid #BCBCBC;
+	color: #999;
+	font-size: 13px;
+	height: 30px;
+	letter-spacing: 1px;
+	padding: 6px 4px 0 9px;
+	width: 516px;
+}
+
+#search_box #search_input.active {
+	border-color: #A9C247;
+	color: #222;
+}
+
+#search_button {
+	position: relative;
+	top: -1px;
+}
+
+#search_box #safe_mode_cell {
+	background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKs%2FaTeMS%2FS5tvzYanMYRN1v83qkhoZQHlVBNIaUfOwceocEs%2FghMYkdKgGb%2BGgRl32hYrSSd%2F99whIy%2BSJNG0g%3D%3D&b=1) repeat-x 0 0;
+	color: #9B9B9B;
+	font-size: 9px;
+	height: 59px;
+	padding: 24px 10px 0 0;
+	text-align: right;
+	vertical-align: top;
+}
+
+#search_box #safe_mode_cell a {
+	color: #0195CB;
+	font-weight: bold;
+}
+
+#search_box #search_suggestions .selected-result {
+	background-color: #206DA1 !important;
+	color: white !important;
+}
+
+#search_box #search_suggestions {
+	background-color: white;
+	border: 2px solid #E6E6E6;
+	font-family: sans-serif;
+	font-size: 11px;
+	height: 280px;
+	line-height: 15px;
+	margin-top: 0;
+	overflow: auto;
+	padding: 2px 0;
+	position: relative;
+	width: 400px;
+	z-index: 101;
+}
+
+#search_box #search_suggestions .site,
+#search_box #search_suggestions .topic {
+	background-color: transparent;
+	cursor: pointer;
+	line-height: 15px;
+	padding: 1px 9px 1px 9px;
+}
+
+#search_box #search_suggestions .heading {
+	color: #BBB;
+	float: right;
+	font-size: 12px;
+	font-style: italic;
+	padding: 1px 10px 2px 0;
+	text-align: right;
+}
+
+#search_box #search_suggestions .topics {
+	color: #206DA1;
+	padding-bottom: 2px;
+}
+
+#search_box #search_suggestions .sites {
+    border-top: 1px dotted #DDD;
+	color: #157707;
+	padding-top: 1px;
+}
+
+#search_box #search_suggestions .none {
+	background-color: white;
+	color: #AAA;
+	cursor: default;
+	font-style: italic;
+	line-height: 15px;
+	padding: 1px 9px 1px 9px;
+}
+
+
+
+/* Translation */
+
+.ugc-trans {
+	color: brown;
+	font-style: italic;
+}
+
+.ugc-trans-lang {
+	color: #666;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+#translation_control {
+	display: none;
+	font-size: 11px;
+}
+
+#translation_control a {
+	text-decoration: none;
+}
+
+#translation_control a:hover {
+	text-decoration: underline;
+}
+
+
+
+/* Errors */
+
+.error-page {
+	margin: 30px 0 0 145px;
+	overflow: auto;
+}
+
+.error-page .error-message p {
+	width: 400px;
+}
+
+.error-page a {
+	color: #0463A3;
+}
+
+.error-page .error-code {
+	color: #0463A3;
+	float: left;
+	font-size: 145px;
+	font-style: italic;
+	width: 300px;
+}
+
+.error-page .error-message {
+	clear: right;
+	color: #666;
+	float: left;
+	font-size: 15px;
+	line-height: 145%;
+	margin: 30px 0 0 0;
+	text-align: left;
+	width: 400px;
+}
+
+.error-page .error-message .error-main {
+	font-weight: bold;
+}

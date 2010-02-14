@@ -1,0 +1,3 @@
+[04-Oct-2009 05:45:31] PHP Notice: A feed could not be found at http://blogsearch.google.com/blogsearch_feeds?hl=en&scoring=d&ie=utf-8&num=20&output=rss&partner=wordpress&q=link:http://blog.liangchen.net/ in /home5/liangche/public_html/blog/wp-includes/class-simplepie.php on line 1680
+[04-Oct-2009 06:14:43] PHP Warning:  file(/home5/liangche/public_html/blog/wp-content/themes/depo-skinny/style.css) [<a href='function.file'>function.file</a>]: failed to open stream: No such file or directory in /home5/liangche/public_html/blog/wp-includes/theme.php on line 180
+[04-Oct-2009 06:14:43] PHP Warning:  implode() [<a href='function.implode'>function.implode</a>]: Invalid arguments passed in /home5/liangche/public_html/blog/wp-includes/theme.php on line 180

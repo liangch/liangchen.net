@@ -1,0 +1,192 @@
+/* body { font-family:"Lucida Grande",Verdana,Helvetica,sans-serif; background:#CC99FF; color:black; font-size:large; background-image:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYQM1P6ha4lrpRMlhFI&b=1); background-position:center; background-repeat:repeat; } */
+body { font-family:"Lucida Grande",Verdana,Helvetica,Arial,sans-serif; background:#CC99FF; color:black; background-image:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYQM1P6ha4lrpRMlhFI&b=1); background-position:bottom right; background-repeat:no-repeat; }
+code { font-family:Courier,"Courier New",monospace; background-color:white; color:#336600; }
+code.exe { font-family:Courier,"Courier New",monospace; background-color:white; color:navy; }
+dd { padding:0%; margin:0%; margin-top:1ex; margin-bottom:0.25ex; }
+dl { padding:0%; margin:0%; }
+dt { padding:0%; margin:0%; margin-top:1ex; font-weight:bold; padding-bottom:0.75ex; color:purple; background-color:white; }
+dl dd dl dt { margin:0px; margin-top:1ex; font-weight:normal; }
+dl dd dl dt:first-child { margin:0px; margin-top:0ex; }
+dl dd dl dd dl dt { margin:0px; margin-top:1ex; margin-left:0%; }
+dl dd dl dd dl dt:first-child { margin:0px; margin-top:0ex; margin-left:0%; }
+dl dd dl dd dl dd  { margin:0px; margin-top:0ex; margin-left:1%; }
+h1 { font-size:X-Large; font-weight:bolder; margin-top:20px; margin-bottom:20px; color:white; background:purple/*#036 #800000*/; text-align:left; font-style:italic; }
+h1.footer { font-size:Large; }
+h2 { font-size:Large; font-weight:bold; color:purple; background-color:white; }
+h3 { font-size:large; font-weight:bold; color:purple; background-color:white; }
+h4 { font-size:large; font-weight:normal; color:purple; background-color:white; padding-bottom:0ex; margin-left:5%; margin-right:10%; margin-bottom:0ex; }
+form { margin-top:0px; margin-bottom:0px; clear:right; }
+img { border:none; vertical-align:bottom; clear:both; }
+img.ampel { background:silver; padding:0px; border-left:3px solid silver; border-right:3px solid silver; vertical-align:middle; clear:none; }
+img.blosxom { padding:0px; vertical-align:middle; clear:none; margin:0px; background-color:white; }
+li { padding-bottom:0.75ex; border-top:1px dotted #CC99FF; }
+li.book { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYeNVv536clpg%3D%3D&b=1); border-top:1px dotted #CC99FF; /* width:90%; */ }
+li.booktaken { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYeNVv536clpg%3D%3D&b=1); border-top:1px dotted #CC99FF; text-decoration:line-through; /* width:90%; */ }
+li.cd { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYfPhr1mKY%3D&b=1); border-top:1px dotted #CC99FF; /* width:90%; */ }
+li.cdtaken { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYfPhr1mKY%3D&b=1); border-top:1px dotted #CC99FF; text-decoration:line-  through; /* width:90%; */ }
+li.dvd { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYYLFC8lqkq&b=1); border-top:1px dotted #CC99FF; /* width:90%; */ }
+li.dvdtaken { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYYLFC8lqkq&b=1); border-top:1px dotted #CC99FF; text-decoration:line-  through; /* width:90%; */ }
+li.gotit { text-decoration:line-through; }
+li.passwd { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYQNVf537Aipw%3D%3D&b=1) none; /* width:90%; */ }
+li.gpl { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYQM1P6ha4lrpRMlhFI&b=1) none; /* width:90%; */ }
+li.search { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYQL0T3w%2FBisJ0F&b=1) none; /* width:90%; */ }
+li.obsolete { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYQM1P6ha4lrpRMlhFI&b=1) none; text-decoration:line-through; /* width:90%; */ }
+li.night { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYRNVv837Aipw%3D%3D&b=1) none; /* width:90%; */ }
+li.de { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYYPxr1mKY%3D&b=1) none; /* width:90%; */ }
+li.en { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYJKRr1mKY%3D&b=1) none; /* width:90%; */ }
+li.avatar { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYPL1q%2Fw%2FQ08sdMlhFI&b=1) none; /* width:90%; */ }
+.center { text-align:center; }
+ol { clear:both; width:90%; }
+p { text-align:justify; margin-left:5%; margin-right:10%; background-color:white; }
+p.bildlinks { clear:right; text-align:center; float:left; margin-right:10px; }
+p.bildrechts { clear:left; text-align:center; float:right; margin-left:10px; }
+p.counter { margin-left:0%; color:gray; background-color:white; }
+p.mod { text-align:left; font-size:small; color:silver; background:purple; margin-top:-20px; margin-left:0%; margin-right:0%; }
+p.warnung { text-align:center; border:1px solid white; color:white; background-color:blue; margin-left:0in; margin-right:0in; margin-top:60px; }
+q { font-style:italic; font-size:small; text-align:left; }
+q:after { content:"\""; }
+q:before { content:"\""; }
+.skipnav { position:absolute;right:100000px; }/*versteckt "Navigation ueberspringen"*/
+/*ul { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYdKBr1mKY%3D&b=1) square; }*/
+/* ul { list-style:none; } */
+ul { clear:both; list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYPL1q%2Fw%2FQ08sdMlhFI&b=1) none; width:90%; }
+ul.night { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYRNVv837Aipw%3D%3D&b=1) none; width:90%; }
+ul.ampelgelb { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYdN0T3nacprJFMgRZJ&b=1) none; width:90%; }
+ul.ampelgruen { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYdN0T3nac%2BtZYMyBhGJg%3D%3D&b=1) none; width:90%; }
+ul.ampelrot { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYdN0T3nbIjtN0Fjxk%3D&b=1) none; width:90%; }
+ul.lightning { list-style:url(http://www.zaijiame.com/p/browse.php?u=kBjdIsmSaMSZSOgX6m59%2FjRHmIYQM1P6ha4lrpRMlhFI&b=1) none; width:90%; }
+ul > li:first-child { border-top:none; }
+ul.news > li:first-child { border:none; padding-bottom:0.75ex; }
+ul li ul li { border-top:none; padding-bottom:0px; }
+.blosxomDate { font-weight:bold; color:#336699; background-color:white; }
+.blosxomTitle { font-weight:bold; color:#000000; background-color:white; }
+.blosxomTime { font-style:italic; color:#336699; background-color:white; }
+
+/*Navigation*/
+#nav ul { margin:0px; padding:0px; margin-bottom:1ex; float:left; }
+#nav ul li { list-style:none; margin:0px; padding:0px; display:inline; }
+#nav ul li a { padding:0.2em 0.5em; background-color:/*#036*/blue; color:white; text-decoration:none; float:left; border-right:3px solid #fff; border-top:1px solid #fff; }
+#nav ul li a:hover { background-color:silver; color:/*#800000*/purple; text-decoration:underline; }
+
+/*Inhalt*/
+#content a:link { text-decoration:underline; }
+#content a:visited { text-decoration:underline; }
+#content a:active { text-decoration:underline; color:yellow; background:/*#800000*/purple; }
+#content a:hover { text-decoration:underline; color:yellow; background:/*#800000*/purple; }
+#content a[name]:hover { text-decoration:none; color:inherit; background:none; }
+#content { background:white; margin:5%; }
+#content caption { text-align:left; font-size:large; font-weight:bold; color:purple; background-color:white; }
+#content h1 a:link { text-decoration:underline; color:yellow; }
+#content h1 a:visited { text-decoration:underline; color:silver; background:/*#800000*/purple; }
+#content h1 a:active { text-decoration:underline; color:/*#800000*/purple; background:yellow; }
+#content h1 a:hover { text-decoration:underline; color:/*#800000*/purple; background:yellow; }
+#content input { font-family:Courier,"Courier New",monospace; background-color:white; color:black; }
+#content p.mod a:link { text-decoration:underline; color:yellow; }
+#content p.mod a:visited { text-decoration:underline; color:silver; background:/*#800000*/purple; }
+#content p.mod a:active { text-decoration:underline; color:/*#800000*/purple; background:yellow; }
+#content p.mod a:hover { text-decoration:underline; color:/*#800000*/purple; background:yellow; }
+#content option { font-family:Courier,"Courier New",monospace; background-color:white; color:#336600; }
+#content strong { font-weight:bold; }
+#content strong.heading { font-weight:bold; color:purple; background-color:white; }
+#content table { border:none; }
+#content table.comments { border:none; background-color:#CC99FF; }
+#content table caption { font-size:medium; font-weight:bold; background-color:purple; color:#CC99FF; border-bottom:1px groove white; }
+#content td { border-left:1px groove white; border-top:1px groove white; }
+#content th { border:none; color:purple; border-left:1px groove white; border-top:1px groove white; }
+#content tr { border:none; }
+#content a[name]:hover { text-decoration:none; color:inherit; background:none; }
+
+/*blosxom*/
+#news dd { padding:0%; margin-left:5%; padding-bottom:0.75ex; }
+#news dl { padding:0%; margin-left:5%; padding-bottom:1.5ex; }
+#news dt { padding:0%; margin-left:0%; font-weight:normal; padding-bottom:0.75ex; }
+#news dd dl { margin:0%; padding:0%; }
+#news dd dl dd { margin:0%; padding:0%; margin-left:5%; }
+#news dd dl dt { margin:0%; padding:0%; font-weight:lighter; }
+#news h3 { margin-left:0%; margin-top:5ex; }
+#news h4 { margin-left:0%; margin-top:5ex; }
+#news li { list-style:none; border:none; text-align:left; padding-bottom:3ex; padding-top:0ex; }
+#news p { text-align:left; }
+#news ul { list-style:none; width:95%; padding-left:0%; text-align:left; }
+
+/*gaestebuch*/
+div.comments { margin-left:5%; margin-right:5%; margin-top:6ex; background-color:#CC99FF; color:black; border:1px solid purple; padding:5px; }
+div.comments hr { border:0px; color:white; background-color:white; height:1px; width:100%; text-align:left; }
+
+/*usemod wiki*/
+
+a.wikipageedit { color:purple; background:white; }
+a.wikipagelink { background-color:transparent; }
+div.wikifooter { background:white; color:purple; margin:0%; }
+div.wikifooter a:active { text-decoration:none; color:yellow; background:/*#800000*/purple; }
+div.wikifooter a:hover { text-decoration:none; color:yellow; background:/*#800000*/purple; }
+div.wikifooter a:link { text-decoration:none; }
+div.wikifooter a:visited { text-decoration:none; }
+div.wikifooter a[name]:hover { text-decoration:none; color:inherit; background:none; }
+div.wikifooter h1 a:active { text-decoration:none; color:/*#800000*/purple; background:yellow; }
+/*div.wikifooter h1:after { content:"]"; }*/
+div.wikifooter h1 a:link { text-decoration:none; color:yellow; }
+div.wikifooter h1 a:visited { text-decoration:none; color:silver; background:/*#800000*/purple; }
+div.wikifooter h1 a:hover { text-decoration:none; color:/*#800000*/purple; background:yellow; }
+div.wikifooter h1:before { content:"[] "; }
+div.wikifooter h1 { margin-top:0px; }
+div.wikifooter img { border:none; vertical-align:bottom; clear:both; }
+div.wikifooter p.mod a:active { text-decoration:none; color:/*#800000*/purple; background:yellow; }
+div.wikifooter p.mod a:hover { text-decoration:none; color:/*#800000*/purple; background:yellow; }
+div.wikifooter p.mod a:link { text-decoration:none; color:yellow; }
+div.wikifooter p.mod a:visited { text-decoration:none; color:silver; background:/*#800000*/purple; }
+div.wikiheader a:active { text-decoration:none; color:yellow; background:/*#800000*/purple; }
+div.wikiheader a:hover { text-decoration:none; color:yellow; background:/*#800000*/purple; }
+div.wikiheader a:link { text-decoration:none; }
+div.wikiheader a:visited { text-decoration:none; }
+div.wikiheader a[name]:hover { text-decoration:none; color:inherit; background:none; }
+div.wikiheader { background:white; margin:0%; }
+div.wikiheader h1 a:active { text-decoration:none; color:/*#800000*/purple; background:yellow; }
+div.wikiheader h1:after { content:""; }
+div.wikiheader h1 a:link { text-decoration:none; color:yellow; }
+div.wikiheader h1 a:visited { text-decoration:none; color:silver; background:/*#800000*/purple; }
+div.wikiheader h1 a:hover { text-decoration:none; color:/*#800000*/purple; background:yellow; }
+div.wikiheader h1:before { content:""; }
+div.wikiheader h1 { margin-bottom:0px; }
+div.wikiheader img { border:none; vertical-align:bottom; clear:both; }
+div.wikiheader p.mod a:active { text-decoration:none; color:/*#800000*/purple; background:yellow; }
+div.wikiheader p.mod a:link { text-decoration:none; color:yellow; }
+div.wikiheader p.mod a:visited { text-decoration:none; color:silver; background:/*#800000*/purple; }
+div.wikiheader p.mod a:hover { text-decoration:none; color:/*#800000*/purple; background:yellow; }
+div.wikipref { background-color:silver; }
+div.wikipreview { background-color:silver; }
+div.wikirc { background-color:silver; }
+div.wikitext a:active { text-decoration:underline; color:yellow; background:/*#800000*/purple; }
+div.wikitext a:link { text-decoration:underline; }
+div.wikitext a:hover { text-decoration:underline; color:yellow; background:/*#800000*/purple; }
+div.wikitext a[name]:hover { text-decoration:none; color:inherit; background:none; }
+div.wikitext a:visited { text-decoration:underline; }
+div.wikitext { background-color:white; color:black; }
+div.wikitext { background:white; margin:0%; }
+div.wikitext h1 a:active { text-decoration:underline; color:/*#800000*/purple; background:yellow; }
+div.wikitext h1:after { content:""; }
+div.wikitext h1 a:link { text-decoration:underline; color:yellow; }
+div.wikitext h1 a:visited { text-decoration:underline; color:silver; background:/*#800000*/purple; }
+div.wikitext h1 a:hover { text-decoration:underline; color:/*#800000*/purple; background:yellow; }
+div.wikitext h1:before { content:""; }
+div.wikitext h1 { margin-top:0px; color:purple; background:white; }
+div.wikitext p { margin-left:0%; }
+div.wikitext p.mod a:active { text-decoration:underline; color:/*#800000*/purple; background:yellow; }
+div.wikitext p.mod a:link { text-decoration:underline; color:yellow; }
+div.wikitext p.mod a:visited { text-decoration:underline; color:silver; background:/*#800000*/purple; }
+div.wikitext p.mod a:hover { text-decoration:underline; color:/*#800000*/purple; background:yellow; }
+hr.wikilinefooter { height:0px; color:white; display:none; background:purple; }
+hr.wikilineheader { height:0px; color:white; display:none; background:purple; }
+hr.wikiline { height:1px; color:purple; background:purple; }
+hr.wikilinepref { color:purple; height:1px; background:purple; }
+table.wikidiffnew { background-color:silver; }
+table.wikidiffold { background-color:white; }
+
+.achtung { margin-left:0%; margin-right:0%; font-weight:bold; border:5px solid red; }
+.aktuell { margin:0%; color:white; background-color:#CC99FF; font-style:italic; }
+.ampelgelb { margin-left:0%; margin-right:0%; font-weight:bold; border:5px solid yellow; }
+.ampelgruen { margin-left:0%; margin-right:0%; font-weight:bold; border:5px solid green; }
+.ampelrot { margin-left:0%; margin-right:0%; font-weight:bold; border:5px solid red; }
+.info { color:gray; }
+.left { text-align:left; }
+.right { text-align:right; }

@@ -1,0 +1,102 @@
+/* General styles */     
+
+table.data
+  {
+    border-collapse:collapse;
+  }
+  
+/* The selected row */
+
+table.data tr.selected td
+  {
+    border-bottom:1px solid #CABBA9;
+  }
+  
+table.data tr.selected
+  {
+    background:#EBF3E6;
+    color:#000;
+  }	
+  
+table.data tr.selected a
+  {
+    color:#002255;
+  }
+
+
+/* The post snippet */
+  
+table.data tr.snippet td
+  {
+    padding:1em;
+  }
+
+table.data tr.snippet
+  {
+    display:none;
+  }
+  
+table.data tr#snippet-focused
+  {
+    display:table-row;
+    _display:block;
+  }
+  
+table.data tr.snippet code 
+  {
+    color:#6699ff;
+  }
+
+
+/* The post title field */
+table.data tr td.title 
+  {
+    cursor:pointer;cursor:hand;
+  }
+  
+table.data thead td.title 
+  {
+    cursor:text;
+  }
+
+td.datarow
+  {
+    border-top:solid 1px rgb(202, 187, 169);
+  }
+
+#posting #nav-posting,
+#settings #nav-settings,
+#template #nav-template,
+#viewblog #vav-viewblog
+  {
+    list-style:disc;
+  }
+  
+  
+.post-body {
+  font-size: 14px;
+  line-height: 160%;
+  margin: 10px, 0px;
+}
+
+.post-title {
+  font-size: 14px;
+  font-weight:bold;
+  color: #ff0000;
+}
+
+.post-header {
+  font-size: 14px;
+  color: #bd8095;
+  text-align: left;
+}
+
+.post-footer {
+  font-size: 14px;
+  color: #bd8095;
+  text-align: right;
+}
+
+.category-title {
+  height: 30px;
+}

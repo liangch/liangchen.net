@@ -1,0 +1,50 @@
+/* Example class for Mini Poll */
+.menuhd {
+	font-size: 12px;
+	color: #FFF;
+	background-color: #F00;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 3px;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	font-weight: bold;
+}
+.poll {
+	font-size: 12px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	background-color: #DFE3E2;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	padding-right: 2px;
+}
+.fat {
+	font-size: 12px;
+	font-weight: bold;
+}
+.tabele {
+	background-color: #000000;
+}
+.formlook {
+	font-size: 12px;
+	color: #000000;
+	border: 1px solid #000000;
+}
+.pollbg {
+	background-color: #DFE3E2;
+	padding-left: 5px;
+	font-size: 12px;
+	color: #000000;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}

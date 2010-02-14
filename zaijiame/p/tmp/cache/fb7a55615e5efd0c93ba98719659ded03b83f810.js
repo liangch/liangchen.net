@@ -1,0 +1,3 @@
+var ad_content ='<table border=0 align=right width=120 bgcolor=#FFFFEE><tr><td><span style=\"FONT-SIZE: 12px\"><a href=\"http://web.6park.com/bid/adufric.php\" target=_blank><center><img src=http://am.6park.com/images/getiton12090.gif border=0></center></a></td></tr><tr><td><span style=\"FONT-SIZE: 12px\"><a href=\"http://list.6park.com/parks/out.php?perm=liyi99" target=_blank><center><b>Liyi99鲜花速递</b></center>专业鲜花速递服务商,把爱送回国内</a><br /><br /><a href=\"http://list.6park.com/parks/out.php?perm=dafapoker" target=_blank><center><b>成人扑克 免费试玩</b></center>首存奖金 600美金 美女多多 赛事不断</a></span></td></tr></table>'
+
+document.write( ad_content ,"gl")

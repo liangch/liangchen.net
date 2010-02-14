@@ -1,0 +1,298 @@
+/*
+374458
+A1ABB4
+566172
+A0A5B2
+000000
+*/
+body {
+  border: none; 
+  font-family: "tahoma", "arial", "helvetica", "sans-serif";
+  font-size: 11px;
+  color: #000000;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+table {
+  border-collapse: collapse;
+  border: none;
+/*  background-color: #FFFFFF; //#A0A5B2;*/
+}
+
+table.main, table.mainouter {
+/*  background-color: #FFFFFF;*/
+}
+
+table.flashy {
+  background-color: #909DE8;
+}
+
+table.bottom {
+  background: transparent;
+}
+
+h1 {
+  font-size: 12pt;
+}
+
+h2 {
+  font-size: 10pt;
+  margin-bottom: 6px;
+}
+
+p {
+  font-size: 8pt;
+}
+
+p.sub { 
+  margin-bottom: 4pt;
+}
+
+link3 {
+  color: #CC0000;
+}
+
+td {
+  font-size: 11px;
+  font-family: "Verdana";
+}
+
+td.embedded {
+  border: none;
+  padding: 0px;
+  text-align: left;
+}
+
+td.bottom {
+  border: none;
+}
+
+td.heading {
+  font-weight: bold;
+}
+
+td.text {
+  padding: 10pt;
+  text-align: left;
+}
+
+td.comment {
+  padding: 10pt;
+  font-size: 8pt;
+  text-align: left;
+}
+
+td.colhead {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0055A4;
+}
+
+td.rowhead {
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+
+td.title {
+  font-size: 14pt;
+}
+
+td.navigation {
+  font-weight: bold;
+  font-size: 10pt;
+   border: none;
+}
+
+td.clear {
+  padding: 0px;
+  border: 0px;
+  background: transparent;
+}
+
+form {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.sublink {
+  font-style: italic;
+  font-size: 7pt;
+  font-weight: normal;
+}
+
+font.gray
+{
+  color: #ACA899;
+  text-decoration: underline;
+}
+
+a:link, a:visited {
+  color: #1144aa;
+}
+
+a:hover {
+  color: #A1ABB4;
+}
+
+a.index {
+  font-weight: bold;
+}
+
+a.biglink {
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+a.altlink:link, a.altlink:visited{
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+a.altlink:hover {
+  text-decoration: underline;
+}
+
+a.altlink_blue:link, a.altlink_blue:visited{
+  font-weight: bold;
+  color: #004E98;
+  text-decoration: none;
+}
+
+a.altlink_blue:hover {
+  text-decoration: underline;
+}
+
+a.altlink_green:link, a.altlink_green:visited{
+  font-weight: bold;
+  color: #007800;
+  text-decoration: none;
+}
+
+a.altlink_green:hover {
+  text-decoration: underline;
+}
+
+.important {
+  font-weight: bold;
+  font-size: 8pt;
+}
+
+.red {
+  color: #ee0000;
+}
+
+.yellow {
+  color: #997700;
+}
+
+.green {
+  color: #000000;
+}
+
+input, select, textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8pt;
+}
+
+.btn {
+  width: 75px;
+  height: 23px;
+}
+
+.small {
+  font-size: 7pt;
+}
+
+.big {
+  font-size: 10pt;
+}
+
+.highlight {
+  text-decoration: underline;
+  font-weight: bold;
+  color: red;
+}
+
+li {
+  margin-top: 6pt;
+  margin-bottom: 6pt;
+}
+
+ul {
+  margin-left: 16pt;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+img.border  
+{  
+  border-style: solid;  
+  border-color: #000000; 
+  border-width: 1px; 
+}
+
+.mnu0 { border:solid 0px #FFFFFF; background: transparent; padding:1px 5px 1px 5px; font-size: 10pt; text-align: center; width: 35px;}
+.mnu1 { border:solid 1px #0055a4; background: transparent; padding:1px 7px 1px 7px; font-size: 10pt; text-align: center;}
+.mnusep { color: #CCC; border:none; background:transparent; padding:2px 1px 2px 1px; font-size: 10pt; text-align: center;}
+.mnusep2 { color: #000000; border:none; background:#FFFFFF; font-size: 10pt; text-align: center;}
+a.darklink:link, a.darklink:visited {
+  text-decoration: none;
+}
+
+a.darklink:hover {
+  text-decoration: none;
+}
+
+div.topleft {
+  width: 2px;
+  height: 4px;
+  background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7aTfYc6GF%2B%2FjhakoYVN1O9gqgtpKwWihxAMqgRLlsBusg%3D&b=3) no-repeat top left;
+  position: absolute;
+  top: 0px;
+  left: -1px;
+}
+
+div.topright {
+  width: 2px;
+  height: 4px;
+  background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7aTfYc6GF%2B%2FjhakoYVN1O9gqgtpKwWkhxAMqgRLlsBusg%3D&b=3) no-repeat top right;
+  position: absolute;
+  top: 0px;
+  right: -1px;
+}
+
+div.bottomright {
+  width: 4px;
+  height: 4px;
+  background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7aTfYc6GF%2B%2FjhakoYVN1O9gqgtpKwAlBxAMqgRLlsBusg%3D&b=3) no-repeat bottom right;
+  position: absolute;
+  bottom: 0px;
+  right: -1px;
+}
+
+div.bottomleft {
+  width: 4px;
+  height: 4px;
+  background: url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7aTfYc6GF%2B%2FjhakoYVN1O9gqgtpKwAihxAMqgRLlsBusg%3D&b=3) no-repeat bottom left;
+  position: absolute;
+  bottom: 0px;
+  left: -1px;
+}
+
+div.shadow {
+  background: #b4afa3;
+  padding: 0 1px;
+  border-left: 1px solid #dcd7c8;
+  border-right: 1px solid #dcd7c8;
+}
+
+img {
+  padding: 5px 5px 9px 5px
+  background: white url(http://www.zaijiame.com/p/browse.php?u=kBjdPciOKt7aTfYc6GF%2B%2FjhakoYVN1O9gqgtpKwAiQtbL6taLBsW&b=3) repeat-x bottom left;
+}
+
