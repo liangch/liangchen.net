@@ -1,1 +1,1 @@
-<?php $load = 2.75; $lastChecked = 1265897095;
+<?php $load = 35.4; $lastChecked = 1274084028;

@@ -167,7 +167,7 @@ function theme_css() {
   a{color:#{$c->links}}table{border-collapse:collapse}
   form{margin:.3em;}td{vertical-align:top;padding:0.3em}img{border:0}small,small a{color:#{$c->small}}
   body{background:#{$c->bodybg};
-  color:#{$c->bodyt};margin:0;font:90% sans-serif}tr.odd td{background:#{$c->odd}}tr.even td{background:#{$c->even}}
+  color:#{$c->bodyt};margin:0;font:100% sans-serif}tr.odd td{background:#{$c->odd}}tr.even td{background:#{$c->even}}
   tr.reply td{background:#{$c->replyodd}
   }tr.reply.even td{background: #{$c->replyeven}}
   .menu{color:#{$c->menut};background:#{$c->menubg};padding: 2px}
