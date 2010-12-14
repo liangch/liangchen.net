@@ -933,9 +933,15 @@ class wp_xmlrpc_server extends IXR_Server {
 			"category_description"	=> $category["description"]
 		);
 
-		$cat_id = wp_insert_category($new_category);
-		if ( !$cat_id )
+		$cat_id = wp_insert_category($new_category, true);
+		if ( is_wp_error( $cat_id ) ) {
+			if ( 'term_exists' == $cat_id->get_error_code() )
+				return (int) $cat_id->get_error_data();
+			else
+				return(new IXR_Error(500, __("Sorry, the new category failed.")));
+		} elseif ( ! $cat_id ) {
 			return(new IXR_Error(500, __("Sorry, the new category failed.")));
+		}
 
 		return($cat_id);
 	}
@@ -1150,8 +1156,11 @@ class wp_xmlrpc_server extends IXR_Server {
 
 		do_action('xmlrpc_call', 'wp.deleteComment');
 
-		if ( ! get_comment($comment_ID) )
+		if ( !$comment = get_comment( $comment_ID ) )
 			return new IXR_Error( 404, __( 'Invalid comment ID.' ) );
+
+		if ( !current_user_can( 'edit_post', $comment->comment_post_ID ) )
+			return new IXR_Error( 403, __( 'You are not allowed to moderate comments on this site.' ) );
 
 		return wp_delete_comment($comment_ID);
 	}
@@ -1179,10 +1188,13 @@ class wp_xmlrpc_server extends IXR_Server {
 		if ( !current_user_can( 'moderate_comments' ) )
 			return new IXR_Error( 403, __( 'You are not allowed to moderate comments on this site.' ) );
 
-		do_action('xmlrpc_call', 'wp.editComment');
-
-		if ( ! get_comment($comment_ID) )
+		if ( !$comment = get_comment( $comment_ID ) )
 			return new IXR_Error( 404, __( 'Invalid comment ID.' ) );
+
+		if ( !current_user_can( 'edit_post', $comment->comment_post_ID ) )
+			return new IXR_Error( 403, __( 'You are not allowed to moderate comments on this site.' ) );
+
+		do_action('xmlrpc_call', 'wp.editComment');
 
 		if ( isset($content_struct['status']) ) {
 			$statuses = get_comment_statuses();
@@ -1411,7 +1423,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		if ( !$user = $this->login($username, $password) )
 			return $this->error;
 
-		if ( !current_user_can( 'edit_posts' ) )
+		if ( !current_user_can( 'edit_pages' ) )
 			return new IXR_Error( 403, __( 'You are not allowed access to details about this site.' ) );
 
 		do_action('xmlrpc_call', 'wp.getPageStatusList');
@@ -1951,7 +1963,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		if ( !$actual_post || $actual_post['post_type'] != 'post' )
 			return new IXR_Error(404, __('Sorry, no such post.'));
 
-		if ( !current_user_can('edit_post', $post_ID) )
+		if ( !current_user_can('delete_post', $post_ID) )
 			return new IXR_Error(401, __('Sorry, you do not have the right to delete this post.'));
 
 		$result = wp_delete_post($post_ID);
@@ -1981,30 +1993,42 @@ class wp_xmlrpc_server extends IXR_Server {
 		$username  = $args[1];
 		$password   = $args[2];
 		$content_struct = $args[3];
-		$publish     = $args[4];
+		$publish     = isset( $args[4] ) ? $args[4] : 0;
 
 		if ( !$user = $this->login($username, $password) )
 			return $this->error;
 
 		do_action('xmlrpc_call', 'metaWeblog.newPost');
 
-		$cap = ( $publish ) ? 'publish_posts' : 'edit_posts';
-		$error_message = __( 'Sorry, you are not allowed to publish posts on this site.' );
-		$post_type = 'post';
 		$page_template = '';
 		if ( !empty( $content_struct['post_type'] ) ) {
 			if ( $content_struct['post_type'] == 'page' ) {
-				$cap = ( $publish ) ? 'publish_pages' : 'edit_pages';
+				if ( $publish || 'publish' == $content_struct['page_status'])
+					$cap  = 'publish_pages';
+				else
+					$cap = 'edit_pages';
 				$error_message = __( 'Sorry, you are not allowed to publish pages on this site.' );
 				$post_type = 'page';
 				if ( !empty( $content_struct['wp_page_template'] ) )
 					$page_template = $content_struct['wp_page_template'];
 			} elseif ( $content_struct['post_type'] == 'post' ) {
-				// This is the default, no changes needed
+				if ( $publish || 'publish' == $content_struct['post_status'])
+					$cap  = 'publish_posts';
+				else
+					$cap = 'edit_posts';
+				$error_message = __( 'Sorry, you are not allowed to publish posts on this site.' );
+				$post_type = 'post';
 			} else {
 				// No other post_type values are allowed here
 				return new IXR_Error( 401, __( 'Invalid post type.' ) );
 			}
+		} else {
+			if ( $publish || 'publish' == $content_struct['post_status'])
+				$cap  = 'publish_posts';
+			else
+				$cap = 'edit_posts';
+			$error_message = __( 'Sorry, you are not allowed to publish posts on this site.' );
+			$post_type = 'post';
 		}
 
 		if ( !current_user_can( $cap ) )
@@ -2269,17 +2293,32 @@ class wp_xmlrpc_server extends IXR_Server {
 		$page_template = '';
 		if ( !empty( $content_struct['post_type'] ) ) {
 			if ( $content_struct['post_type'] == 'page' ) {
-				$cap = ( $publish ) ? 'publish_pages' : 'edit_pages';
+				if ( $publish || 'publish' == $content_struct['page_status'] )
+					$cap  = 'publish_pages';
+				else
+					$cap = 'edit_pages';
 				$error_message = __( 'Sorry, you are not allowed to publish pages on this site.' );
 				$post_type = 'page';
 				if ( !empty( $content_struct['wp_page_template'] ) )
 					$page_template = $content_struct['wp_page_template'];
 			} elseif ( $content_struct['post_type'] == 'post' ) {
-				// This is the default, no changes needed
+				if ( $publish || 'publish' == $content_struct['post_status'] )
+					$cap  = 'publish_posts';
+				else
+					$cap = 'edit_posts';
+				$error_message = __( 'Sorry, you are not allowed to publish posts on this site.' );
+				$post_type = 'post';
 			} else {
 				// No other post_type values are allowed here
 				return new IXR_Error( 401, __( 'Invalid post type.' ) );
 			}
+		} else {
+			if ( $publish || 'publish' == $content_struct['post_status'] )
+				$cap  = 'publish_posts';
+			else
+				$cap = 'edit_posts';
+			$error_message = __( 'Sorry, you are not allowed to publish posts on this site.' );
+			$post_type = 'post';
 		}
 
 		if ( !current_user_can( $cap ) )
@@ -3095,7 +3134,7 @@ class wp_xmlrpc_server extends IXR_Server {
 
 		do_action('xmlrpc_call', 'mt.publishPost');
 
-		if ( !current_user_can('edit_post', $post_ID) )
+		if ( !current_user_can('publish_posts') || !current_user_can('edit_post', $post_ID) )
 			return new IXR_Error(401, __('Sorry, you cannot edit this post.'));
 
 		$postdata = wp_get_single_post($post_ID,ARRAY_A);

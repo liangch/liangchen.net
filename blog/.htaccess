@@ -37,3 +37,5 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
+AddType application/x-mobipocket-ebook mobi
+AddType video/x-flv flv

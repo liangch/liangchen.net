@@ -728,7 +728,7 @@ class WP_User {
 		$caps = call_user_func_array( 'map_meta_cap', $args );
 
 		// Multisite super admin has all caps by definition, Unless specifically denied.
-		if ( is_multisite() && is_super_admin() ) {
+		if ( is_multisite() && is_super_admin( $this->ID ) ) {
 			if ( in_array('do_not_allow', $caps) )
 				return false;
 			return true;
@@ -799,9 +799,6 @@ function map_meta_cap( $cap, $user_id ) {
 	case 'remove_user':
 		$caps[] = 'remove_users';
 		break;
-	case 'delete_user':
-		$caps[] = 'delete_users';
-		break;
 	case 'promote_user':
 		$caps[] = 'promote_users';
 		break;
@@ -812,7 +809,7 @@ function map_meta_cap( $cap, $user_id ) {
 		// Fall through
 	case 'edit_users':
 		// If multisite these caps are allowed only for super admins.
-		if ( is_multisite() && !is_super_admin() )
+		if ( is_multisite() && !is_super_admin( $user_id ) )
 			$caps[] = 'do_not_allow';
 		else
 			$caps[] = 'edit_users'; // Explicit due to primitive fall through
@@ -991,7 +988,7 @@ function map_meta_cap( $cap, $user_id ) {
 			$caps[] = 'read_private_pages';
 		break;
 	case 'unfiltered_upload':
-		if ( defined('ALLOW_UNFILTERED_UPLOADS') && ALLOW_UNFILTERED_UPLOADS && ( !is_multisite() || is_super_admin() )  )
+		if ( defined('ALLOW_UNFILTERED_UPLOADS') && ALLOW_UNFILTERED_UPLOADS && ( !is_multisite() || is_super_admin( $user_id ) )  )
 			$caps[] = $cap;
 		else
 			$caps[] = 'do_not_allow';
@@ -1028,10 +1025,13 @@ function map_meta_cap( $cap, $user_id ) {
 	case 'delete_user':
 	case 'delete_users':
 		// If multisite these caps are allowed only for super admins.
-		if ( is_multisite() && !is_super_admin() )
+		if ( is_multisite() && !is_super_admin( $user_id ) ) {
 			$caps[] = 'do_not_allow';
-		else
+		} else {
+			if ( 'delete_user' == $cap )
+				$cap = 'delete_users';
 			$caps[] = $cap;
+		}
 		break;
 	case 'create_users':
 		if ( is_multisite() && !get_site_option( 'add_new_users' ) )
@@ -1079,9 +1079,6 @@ function current_user_can( $capability ) {
 function current_user_can_for_blog( $blog_id, $capability ) {
 	$current_user = wp_get_current_user();
 
-    if ( is_multisite() && is_super_admin() )
-		return true;
-
 	if ( empty( $current_user ) )
 		return false;
 
@@ -1112,7 +1109,7 @@ function author_can( $post, $capability ) {
 
 	$author = new WP_User( $post->post_author );
 
-	if ( empty( $author ) )
+	if ( empty( $author->ID ) )
 		return false;
 
 	$args = array_slice( func_get_args(), 2 );

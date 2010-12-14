@@ -95,6 +95,9 @@ blockquote, pre {
 	text-align:right;
 	margin-left:10px;
 }
+.bookimg {
+	max-height: 300px;
+}
 .aligncenter {
 	display: block;
 	margin-left: auto;
@@ -125,7 +128,7 @@ textarea {
 	font-size:12px;
 	font-family:Verdana,"BitStream vera Sans",Tahoma,Helvetica,Sans-serif;
 }
-.boxcaption {
+.boxcaption, .related_post_title {
 	background:#E3E4E6 url(img/box.gif) 0 0 no-repeat;
 	padding:6px 12px;
 	border-bottom:1px solid #CCC;

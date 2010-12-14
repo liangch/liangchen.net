@@ -1,5 +1,19 @@
 <?php get_header(); ?>
 
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "pub-6881177074621885";
+/* 468x60 首页 */
+google_ad_slot = "0114810025";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</center>
+
 <?php if (have_posts()) : the_post(); update_post_caches($posts); ?>
 
 	<div class="post" id="post-<?php the_ID(); ?>">

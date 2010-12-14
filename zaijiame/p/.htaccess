@@ -1,2 +1,4 @@
 # Use PHP5 Single php.ini as default
 AddHandler application/x-httpd-php5s .php
+AddType application/x-mobipocket-ebook mobi
+AddType video/x-flv flv

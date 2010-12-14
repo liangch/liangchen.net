@@ -1,76 +1,88 @@
 <?php
 /** 
- * The base configurations of the WordPress.
+ * WordPress 基础配置文件。
  *
- * This file has the following configurations: MySQL settings, Table Prefix,
- * Secret Keys, WordPress Language, and ABSPATH. You can find more information by
- * visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing
- * wp-config.php} Codex page. You can get the MySQL settings from your web host.
+ * 本文件包含以下配置选项: MySQL 设置、数据库表名前缀、
+ * 密匙、WordPress 语言设定以及 ABSPATH。如需更多信息，请访问
+ * {@link http://codex.wordpress.org/Editing_wp-config.php 编辑
+ * wp-config.php} Codex 页面。MySQL 设置具体信息请咨询您的空间提供商。
  *
- * This file is used by the wp-config.php creation script during the
- * installation. You don't have to use the web site, you can just copy this file
- * to "wp-config.php" and fill in the values.
+ * 这个文件用在于安装程序自动生成 wp-config.php 配置文件，
+ * 您可以手动复制这个文件，并重命名为 wp-config.php，然后输入相关信息。
+ *
  *
  * @package WordPress
  */
 
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define('DB_NAME', 'putyourdbnamehere');
+// ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //
+/** WordPress 数据库的名称 */
+define('DB_NAME', 'database_name_here');
 
-/** MySQL database username */
-define('DB_USER', 'usernamehere');
+/** MySQL 数据库用户名 */
+define('DB_USER', 'username_here');
 
-/** MySQL database password */
-define('DB_PASSWORD', 'yourpasswordhere');
+/** MySQL 数据库密码 */
+define('DB_PASSWORD', 'password_here');
 
-/** MySQL hostname */
+/** MySQL 主机 */
 define('DB_HOST', 'localhost');
 
-/** Database Charset to use in creating database tables. */
+/** 创建数据表时默认的文字编码 */
 define('DB_CHARSET', 'utf8');
 
-/** The Database Collate type. Don't change this if in doubt. */
+/** 数据库整理类型。如不确定请勿更改 */
 define('DB_COLLATE', '');
 
 /**#@+
- * Authentication Unique Keys.
+ * 身份密匙设定。
  *
- * Change these to different unique phrases!
- * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/ WordPress.org secret-key service}
- * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+ * 您可以随意写一些字符
+ * 或者直接访问 {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org 私钥生成服务}，
+ * 任何修改都会导致 cookie 失效，所有用户必须重新登录。
  *
  * @since 2.6.0
  */
-define('AUTH_KEY', 'put your unique phrase here');
-define('SECURE_AUTH_KEY', 'put your unique phrase here');
-define('LOGGED_IN_KEY', 'put your unique phrase here');
-define('NONCE_KEY', 'put your unique phrase here');
+define('AUTH_KEY',         'put your unique phrase here');
+define('SECURE_AUTH_KEY',  'put your unique phrase here');
+define('LOGGED_IN_KEY',    'put your unique phrase here');
+define('NONCE_KEY',        'put your unique phrase here');
+define('AUTH_SALT',        'put your unique phrase here');
+define('SECURE_AUTH_SALT', 'put your unique phrase here');
+define('LOGGED_IN_SALT',   'put your unique phrase here');
+define('NONCE_SALT',       'put your unique phrase here');
+
 /**#@-*/
 
 /**
- * WordPress Database Table prefix.
+ * WordPress 数据表前缀。
  *
- * You can have multiple installations in one database if you give each a unique
- * prefix. Only numbers, letters, and underscores please!
+ * 如果您有在同一数据库内安装多个 WordPress 的需求，请为每个 WordPress 设置不同的数据表前缀。
+ * 前缀名只能为数字、字母加下划线。
  */
 $table_prefix  = 'wp_';
 
 /**
- * WordPress Localized Language, defaults to English.
+ * WordPress 语言设置，默认为英语。
  *
- * Change this to localize WordPress.  A corresponding MO file for the chosen
- * language must be installed to wp-content/languages. For example, install
- * de.mo to wp-content/languages and set WPLANG to 'de' to enable German
- * language support.
+ * 本项设定能够让 WordPress 显示您需要的语言。
+ * 	wp-content/languages 内应放置同名的 .mo 语言文件。
+ * 要使用 WordPress 简体中文界面，只需填入 zh_CN。
  */
-define ('WPLANG', '');
+define ('WPLANG', 'zh_CN');
 
-/* That's all, stop editing! Happy blogging. */
+/**
+ * 开发者专用：WordPress 调试模式。
+ *
+ * 将这个值改为“true”，WordPress 将显示所有开发过程中的提示。
+ * 强烈建议插件开发者在开发环境中启用本功能。
+ */
+define('WP_DEBUG', false);
 
-/** WordPress absolute path to the Wordpress directory. */
+/* 好了！请不要再继续编辑。请保存该文件。 */
+
+/** WordPress 目录的绝对路径。 */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
-/** Sets up WordPress vars and included files. */
+/** 设置 WordPress 变量和包含文件。 */
 require_once(ABSPATH . 'wp-settings.php');

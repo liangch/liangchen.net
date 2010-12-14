@@ -103,10 +103,6 @@ function redirect_canonical($requested_url=null, $do_redirect=true) {
 		} elseif ( is_single() && !empty($_GET['p']) && ! $redirect_url ) {
 			if ( $redirect_url = get_permalink(get_query_var('p')) )
 				$redirect['query'] = remove_query_arg(array('p', 'post_type'), $redirect['query']);
-			if ( get_query_var( 'page' ) ) {
-				$redirect_url = trailingslashit( $redirect_url ) . user_trailingslashit( get_query_var( 'page' ), 'single_paged' );
-				$redirect['query'] = remove_query_arg( 'page', $redirect['query'] );
-			}
 		} elseif ( is_single() && !empty($_GET['name'])  && ! $redirect_url ) {
 			if ( $redirect_url = get_permalink( $wp_query->get_queried_object_id() ) )
 				$redirect['query'] = remove_query_arg('name', $redirect['query']);
@@ -156,8 +152,8 @@ function redirect_canonical($requested_url=null, $do_redirect=true) {
 
 			$obj = $wp_query->get_queried_object();
 
-			if ( $term_count <= 1 && !empty($obj->term_id) && ( $tax_url = get_term_link((int)$obj->term_id, $obj->taxonomy) ) && !is_wp_error($tax_url) ) {
-
+			if ( $term_count <= 1 && !empty($obj->term_id) && ( $tax_url = get_term_link((int)$obj->term_id, $obj->taxonomy) )
+					&& !is_wp_error($tax_url) && $redirect['query'] ) {
 				if ( is_category() ) {
 					$redirect['query'] = remove_query_arg( array( 'category_name', 'category', 'cat'), $redirect['query']);
 				} elseif ( is_tag() ) {
@@ -180,10 +176,16 @@ function redirect_canonical($requested_url=null, $do_redirect=true) {
 
 			}
 		} elseif ( is_single() && strpos($wp_rewrite->permalink_structure, '%category%') !== false ) {
-			$category = get_term_by('slug', get_query_var('category_name'), 'category');
+			$category = get_category_by_path(get_query_var('category_name'));
 			$post_terms = wp_get_object_terms($wp_query->get_queried_object_id(), 'category', array('fields' => 'tt_ids'));
 			if ( (!$category || is_wp_error($category)) || ( !is_wp_error($post_terms) && !empty($post_terms) && !in_array($category->term_taxonomy_id, $post_terms) ) )
 				$redirect_url = get_permalink($wp_query->get_queried_object_id());
+		}
+
+		// Post Paging
+		if ( is_singular() && get_query_var('page') && $redirect_url ) {
+			$redirect_url = trailingslashit( $redirect_url ) . user_trailingslashit( get_query_var( 'page' ), 'single_paged' );
+			$redirect['query'] = remove_query_arg( 'page', $redirect['query'] );
 		}
 
 		// paging and feeds
@@ -343,6 +345,16 @@ function redirect_canonical($requested_url=null, $do_redirect=true) {
 
 	if ( !$redirect_url || $redirect_url == $requested_url )
 		return false;
+		
+	// Hex encoded octets are case-insensitive. 
+	if ( false !== strpos($requested_url, '%') ) {
+		if ( !function_exists('lowercase_octets') ) {
+			function lowercase_octets($matches) { 
+				return strtolower( $matches[0] ); 
+			} 
+		}
+		$requested_url = preg_replace_callback('|%[a-fA-F0-9][a-fA-F0-9]|', 'lowercase_octets', $requested_url);
+	}
 
 	// Note that you can use the "redirect_canonical" filter to cancel a canonical redirect for whatever reason by returning FALSE
 	$redirect_url = apply_filters('redirect_canonical', $redirect_url, $requested_url);

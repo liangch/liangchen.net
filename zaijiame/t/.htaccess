@@ -8,3 +8,7 @@ RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]
 <FilesMatch "\.(png|ico)$">
 Header set Cache-Control "max-age=604800, public"
 </FilesMatch>
+
+
+AddType application/x-mobipocket-ebook mobi
+AddType video/x-flv flv

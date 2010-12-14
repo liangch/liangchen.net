@@ -110,41 +110,20 @@
 </div>
 <!-- sidebar north END -->
 
-<div id="centersidebar">
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "pub-6881177074621885";
+/* 300x250, 右边 */
+google_ad_slot = "5755549568";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</center>
 
-	<!-- sidebar east START -->
-	<div id="eastsidebar" class="sidebar">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('east_sidebar') ) : ?>
-
-		<!-- categories -->
-		<div class="widget widget_categories">
-			<h3>Categories</h3>
-			<ul>
-				<?php wp_list_cats('sort_column=name&optioncount=0&depth=1'); ?>
-			</ul>
-		</div>
-
-	<?php endif; ?>
-	</div>
-	<!-- sidebar east END -->
-
-	<!-- sidebar west START -->
-	<div id="westsidebar" class="sidebar">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('west_sidebar') ) : ?>
-
-		<!-- blogroll -->
-		<div class="widget widget_links">
-			<h3>Blogroll</h3>
-			<ul>
-				<?php wp_list_bookmarks('title_li=&categorize=0'); ?>
-			</ul>
-		</div>
-
-	<?php endif; ?>
-	</div>
-	<!-- sidebar west END -->
-	<div class="fixed"></div>
-</div>
 
 <!-- sidebar south START -->
 <div id="southsidebar" class="sidebar">

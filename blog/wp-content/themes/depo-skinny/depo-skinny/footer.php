@@ -40,5 +40,6 @@
 		</div>
 
 	</div> <!-- end container -->
+</div> <!-- end body -->
 </body>
 </html>

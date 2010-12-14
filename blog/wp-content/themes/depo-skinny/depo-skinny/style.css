@@ -18,16 +18,20 @@ body {
     text-align: center;
     font-size: 13px;
     line-height: 18px;
-    font-family: "Lucida Grande", Verdana, Arial, sans-serif;
+    font-family: "Lucida Grande", Verdana, Arial, STXihei, sans-serif;
 }
 
 img#wpstats { width:0px; height:0px; overflow:hidden; }
 
 a { color:#000; text-decoration: none }
-a:hover { color:#066; text-decoration: underline }
+a:hover { color:#666; text-decoration: underline }
 
-p, ul, ol, li { 
+p, ul, ol, pre { 
     margin-bottom: 18px; 
+}
+
+li {
+    margin-bottom: 5px;
 }
 
 blockquote { 
@@ -60,7 +64,7 @@ h2 {
 }
 
 h3 { 
-    font-size: 18px; 
+    font-size: 16px; 
     line-height: 18px;
     margin-bottom: 20px;
 }
@@ -71,6 +75,9 @@ h4 {
     margin-bottom: 20px;
 }
 
+.body {
+    width: 100%;
+}
 .container {
     text-align:center;
     margin: 0 auto;
@@ -81,22 +88,38 @@ h4 {
 /* HEADER */
 
 .header {
-    padding: 50px 0 0;
     text-align:left;
-    border-bottom: 1px solid #666;
+    background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(#D7D7D7), to(#E4E4E4));
+    border-bottom: 1px solid #C6C6C6;
+    font-family: 'Yanone Kaffeesatz', arial, serif;
 }
 
-.header h1 {
-    font-size: 26px;
+.header h1 { 
+    font-size: 16px;
     color: #000;
     font-weight: normal;
+    padding: 3px 15px 0 15px;
+    margin: 0;
+    line-height: 29px;
+    text-transform: uppercase;
 }
 
 .header span {
-    margin-left: 10px;
+    padding-left: 5px;
     font-size: 12px;
     color: #666;
-    font-weight: normal;
+    text-transform: lowercase;
+}
+
+.header .icons {
+    float: right;
+    padding-top: 5px;
+    vertical-align: top;
+}
+
+.header .icons a img {
+    padding-left: 3px;
+    height: 19px;
 }
 
 .header a { color: #333; }
@@ -118,7 +141,6 @@ h4 {
     border-bottom: 1px solid #ccc;
     text-align:center;
     padding: 11px 0;
-    margin-bottom:9px;
     width:500px;
 }
 
@@ -140,7 +162,7 @@ h4 {
 
 /* POSTS */
 
-.post p a { font-weight:bold }
+.post p a, .post li a { font-weight:bold }
 
 .post {
     border-bottom: 1px solid #ccc;
@@ -169,7 +191,7 @@ h4 {
 }
 
 p.byline {
-	margin-top:-10px;
+    margin-top:-10px;
     font-size:11px;
     color: #555;
 }
@@ -180,6 +202,20 @@ p.byline {
 
 .post IMG.noline {
 	border:0;
+}
+
+.post img.left {
+	float: left;
+	width: 50%;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+.post img.right {
+	float: right;
+	width: 50%;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
 span.previous { padding: 0 20px 0 0; float: left; }
